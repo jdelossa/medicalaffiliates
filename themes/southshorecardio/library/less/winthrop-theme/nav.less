@@ -1,0 +1,80 @@
+.navbar-fixed-top {
+  top: 30px;
+  background-color: rgba(0,0,0,0.11);
+  -webkit-animation: fadein 0.7s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.7s; /* Firefox < 16 */
+  -ms-animation: fadein 0.7s; /* Internet Explorer */
+  -o-animation: fadein 0.7s; /* Opera < 12.1 */
+  animation: fadein 0.7s;
+}
+.single .navbar-fixed-top {
+  background-color: rgba(247, 247, 247, 1) !important;
+  box-shadow: #7c7d80 0px 0px 1px;
+}
+.navbar-default {
+  border-color: transparent;
+}
+.navbar {
+  margin-bottom: 0 !important;
+}
+.navbar-header {
+  margin: 12px 0;
+}
+.navbar .title {
+  color: #ffffff;
+  font-size: 24px;
+}
+.nav{
+  float: right;
+  position: relative;
+  top: 7px;
+}
+.nav li {
+  display: inline-block;
+  float: none !important;
+}
+.nav li > a:focus,
+.nav li > a:hover, .active {
+  background: none repeat scroll 0 0 rgba(0,0,0, 0.11) !important;
+  box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.11) inset;
+  -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.11) inset;
+  border-radius: 25px;
+}
+.nav > li > a, .back > li > a {
+  padding: 5px 15px 5px !important;
+  text-shadow: none !important;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+#contact-button a {
+  border-radius: 25px;
+  color: #ffffff !important;
+  background-color: #d5535b;
+}
+#contact-button a:hover, li#contact-button.active a {
+  background-color: rgba(193, 61, 73, 0.9) !important;
+}
+/* Single Post (Doctor Profile  Needs different colored text) */
+.single.single-post .title {
+  color: #545454 !important;
+}
+.single.single-post li.about, .single.single-post li.offices, .single.single-post li.services, .page-id-4 ul.back, .error404 ul.back{
+  display: none;
+  visibility: hidden;
+}
+.single.single-post .nav > li > a, .back >li > a {
+  color: #545454 !important;
+}
+/* Single Post Page has back button */
+.back {
+  position: relative;
+  top: 13px;
+  float: left;
+  left: 375px;
+}
+ul.back {
+  padding-left: 0;
+}

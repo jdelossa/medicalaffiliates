@@ -1,0 +1,21 @@
+.cta-container {
+    display: block;
+    left: 0;
+    right: 0;
+}
+.cta li {
+	float: left;
+	padding: 10px 0;
+	width: 50%;
+}
+.row-fluid .offset1 {
+	margin-left: 0 !important;
+}
+.insurances {
+    display: inline-block;
+    float: left;
+}
+#insurances p {
+    margin-top: 20px;
+    width: 100%;
+}

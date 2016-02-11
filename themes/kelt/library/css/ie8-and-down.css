@@ -1,0 +1,14 @@
+body {
+	padding-top: 40px !important;
+}
+.cta-container {
+	background-color: #365466 !important;
+}
+
+#map {
+	width: 100% !important;
+}
+.jumbotron {
+    behavior: url('http://wuhwebsites.winthrop.org/kelt_wordpress/backgroundsize.min.htc');
+    -ms-behavior: url('http://wuhwebsites.winthrop.org/kelt_wordpress/backgroundsize.min.htc');
+}

@@ -1,0 +1,73 @@
+#insurances {
+  text-align: center;
+  .insurances {
+    background-image: url("../../assets/images/insurances.png");
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    height: 50px;
+    width: 130px;
+  }
+  .aetna {
+    background-position: 0 0;
+  }
+  .agewell {
+    background-position: 0 -200px;
+  }
+  .bluecross {
+    background-position: -840px 0;
+  }
+  .cigna {
+    background-position: -286px 0px;
+  }
+  .emblemHealth {
+    background-position: -840px -50px;
+  }
+  .ghi {
+    background-position: -431px -398px;
+  }
+  .hip {
+    background-position: 0 -100px;
+  }
+  .magnacare {
+    background-position: -140px -47px;
+  }
+  .medicare {
+    background-position: -568px -47px;
+  }
+  .oxford {
+    background-position: -1400px -50px;
+  }
+  .united {
+    background-position: -700px 0;
+  }
+  .vytra {
+    background-position: -145px -100px;
+  }
+  .oscar {
+    background-position: -566px -401px;
+  }
+  .fdny {
+    background-position: -705px -398px;
+  }
+  .healthrepublic {
+    background-position: -840px -398px;
+  }
+}
+.list-insurance {
+  padding-left: 0;
+  li {
+    font-weight: 500;
+    float: left;
+    list-style-type: none;
+    width: 50%;
+  }
+}
+.margin {
+  margin: 10px 50px;
+}
+@media (max-width: 480px) {
+  .margin {
+    margin: 10px 25px;
+  }
+}

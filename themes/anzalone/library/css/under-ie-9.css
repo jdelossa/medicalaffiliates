@@ -1,0 +1,19 @@
+body {
+    padding-top: 0 !important;
+}
+/*Mobile Header*/
+.mobile-header {
+    display: none;
+    visibility: hidden;
+}
+/*Content*/
+.col-centered {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80% !important;
+}
+.jumbotron {
+    behavior: url('http://wuhwebsites.winthrop.org/anzalone_wordpress/backgroundsize.min.htc');
+    -ms-behavior: url('http://wuhwebsites.winthrop.org/anzalone_wordpress/backgroundsize.min.htc');
+}

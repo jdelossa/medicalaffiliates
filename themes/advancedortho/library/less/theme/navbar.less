@@ -1,0 +1,81 @@
+.navbar-fixed-top {
+  top: 30px;
+  background-color: #3482A1;
+  z-index: 1060;
+  -webkit-animation: fadein 0.7s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.7s; /* Firefox < 16 */
+  -ms-animation: fadein 0.7s; /* Internet Explorer */
+  -o-animation: fadein 0.7s; /* Opera < 12.1 */
+  animation: fadein 0.7s;
+}
+.navbar-default {
+  border-color: transparent;
+}
+.navbar {
+  margin-bottom: 0 !important;
+}
+.navbar-header {
+  margin: 10px 0;
+}
+a.title {
+  color: #ffffff;
+  font-size: 24px;
+
+  &:hover {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+.nav {
+  float: right;
+  position: relative;
+  top: 12px;
+}
+.navbar li {
+  display: inline-block;
+  float: none !important;
+}
+.navbar li > a:focus,
+.navbar li > a:hover, #navbar li.active {
+  background: none repeat scroll 0 0 rgba(0,0,0, 0.11) !important;
+  box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.11) inset;
+  -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.11) inset;
+  border-radius: 10px;
+}
+.navbar > li > a, .back > li > a {
+  padding: 5px 15px 5px !important;
+  text-shadow: none !important;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.contact-button a {
+  border-radius: 10px;
+  color: #ffffff !important;
+  background-color: #6BA025 ;
+}
+.contact-button a:hover, li.contact-button.active a {
+  background-color: #6b9138 !important;
+}
+
+/* Single Post (Doctor Profile  Needs different colored text) */
+.single.single-post li.about, .single.single-post li.services, .single.single-post li.medical-staff, .page-id-5 ul.back, .page-id-10 ul.back, .page-id-15 ul.back, .error404 ul.back{
+  display: none;
+  visibility: hidden;
+}
+.single.single-post .nav > li > a, .back >li > a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+/* Single Post Page has back button */
+.back {
+  position: relative;
+  top: 18px;
+  float: left;
+  left: 425px;
+}
+ul.back {
+  padding-left: 0;
+}

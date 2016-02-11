@@ -1,0 +1,47 @@
+body {
+    padding-top: 0 !important;
+}
+.jumbotron {
+    behavior: url('http://wuhwebsites.winthrop.org/advanced_neuro_wordpress/backgroundsize.min.htc');
+    -ms-behavior: url('http://wuhwebsites.winthrop.org/advanced_neuro_wordpress/backgroundsize.min.htc');
+}
+/*Mobile*/
+.locations, .locations a {
+    color: #ffffff;
+}
+/*Nav*/
+.header, .cta {
+    background-color: #ffffff;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    /* IE 5-7 */
+    filter: alpha(opacity=80);
+}
+.navbar-header {
+    float: left;
+}
+.navbar .nav {
+    float: right !important;
+}
+/*CTA*/
+.cta-logo, .footer-logo {
+    width: 300px;
+}
+/*Content*/
+.col-centered {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80% !important;
+}
+/*Footer*/
+.footer-logo {
+    margin-left: 60px;
+}
+.footer p, .footer a {
+    color: #ffffff !important;
+}
+.top {
+    display: none;
+    visibility: hidden;
+}

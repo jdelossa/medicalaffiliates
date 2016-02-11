@@ -1,0 +1,631 @@
+/*
+Theme Name:         East End Cardiology
+Theme URI:          https://eastendcardio.com
+Description:        A East End Cardiology Theme
+Version:            1.0
+Author:             Winthrop Web
+Author URI:         https://www.winthrop.org/
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/********************* ANIMATIONS *********************/
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(5px);
+  }
+  40% {
+    -webkit-transform: translateY(10px);
+  }
+  60% {
+    -webkit-transform: translateY(0px);
+  }
+}
+/********************* HTML ELEMENTS *********************/
+html {
+	min-height: 100%;
+  position: relative;
+}
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body, #map, #map2 {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 80px 0 0 0;
+}
+section {
+  padding: 20px 0;
+  background-color: #f2f2f2;
+}
+section h2 {
+  text-align: center;
+  color: rgba(28, 79, 109, 1);
+  font-weight: 600;
+}
+h1,h2,h3,h4,h5,h6 {
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgba(56, 116, 150, 1);
+}
+p,a,address,ul {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #142E3D;
+  line-height: 1.75em;
+}
+hr {
+  border-top: solid 1px #ccc;
+}
+a, a:hover {
+  color: rgba(70, 131, 166, 1);
+}
+a.title:hover {
+  text-decoration: none !important;
+}
+
+/********************* UNIVERSAL STYLES *********************/
+.full-width-padding {
+  text-align: center;
+    padding: 0 10px;
+}
+.line-break /*Line under Section h2*/{
+  height: 2px;
+  width: 55px;
+  text-align: center;
+  background-color: rgba(70, 131, 166, 1) !important;
+  display: inline-block;
+  position: relative;
+  bottom: 10px;
+    background-image: url('library/img/separator.png');
+}
+.separator {
+    display: block;
+    width: 100%;
+    height: 15px;
+    margin: 15px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+.line-separator {
+    background-image: url('library/img/separator.png');
+}
+
+.long-separator {
+    background-image: url('library/img/long-separator.png');
+    height: 30px;
+}
+/* Removed BOOTSTRAP Padding! */
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+/********************* HEADER CONTACT TOP STYLES *********************/
+.header-contact {
+  height: 30px;
+  background-color: rgba(255,255,255, 1);
+  position: fixed;
+  z-index: 1060;
+  width: 100%;
+}
+.header-contact ul {
+  padding-left: 0 !important;
+  margin-bottom: 0;
+}
+.header-contact li {
+  display: inline-block;
+  color: rgba(28, 79, 109, 1);
+}
+.header-contact, .header-contact a {
+  color: rgba(28, 79, 109, 1);
+  padding: 0;
+  top: 0;
+  text-decoration: underline;
+  letter-spacing: 0.3px;
+  font-weight: 300;
+}
+.header-contact a:hover {
+  color: rgba(28,79,109,0.8);
+}
+/********************* NAVIGATION STYLES *********************/
+.navbar-fixed-top {
+  background-color: rgba(28, 79, 109, 1) !important;
+  z-index: 1060;
+  top: 30px;
+  box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.11) inset;
+  -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.11) inset;
+  height: 50px !important;
+  border-color: rgba(80,80,80,0.2);
+}
+.navbar-brand, .navbar-brand a:hover  {
+  font-size: 29px;
+  font-weight: 500;
+  color: #ffffff !important;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus,
+li.active > a{
+ background: none repeat scroll 0 0 rgba(0,0,0, 0.11);
+  box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.11) inset;
+  -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.11) inset;
+  border-radius: 5px;
+} 
+.nav > li > a {
+  color: #ffffff !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding: 7px 15px;
+  margin-top: 8px;
+}
+.contact, .active .contact, a.contact:active, a.contact:focus, a.contact:hover {
+  background-color: rgba(186, 78, 86, 1) !important;
+  border-radius: 5px;
+}
+.navbar-toggle {
+  border-color: rgba(70, 131, 166, 1);
+  background-color: #ddd;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: rgba(70, 131, 166, 1);
+}
+/********************* CTA STYLES *********************/
+#about/*Section*/ {
+  background-color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-image: url('library/img/hero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: rgba(28, 79, 109, 1) solid 3px;
+  height: 450px;
+}
+#home {
+  background: none repeat scroll 0 0 rgba(255,255,255,0.5);
+  box-shadow: 1px 1px 9px 1px rgba(255,255,255, 0.11) inset;
+  -webkit-box-shadow: 0 0 9px 1px rgba(255,255,255, 0.11) inset;
+  padding: 15px;
+  border-radius: 5px;
+}
+#error {
+    padding: 50px 0;
+}
+#error-hero {
+    padding: 0;
+}
+#error-hero > .jumbotron {
+    background-image: url('library/img/hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.cta-container {
+  text-align: center;
+}
+.cta-container h2 {
+  text-transform: capitalize;
+}
+.cta-container h2, .cta-container p {
+	color: rgba(28, 79, 109, 1);
+  text-shadow: rgba(21, 44, 58, 1) 0.2px 0.2px 0;
+}
+.cta-container p {
+  font-size: 14px;
+}
+.cta-logo {
+  padding-top: 15px;
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  text-align: center;
+}
+.cta-logo img {
+  max-width: 100%;
+}
+.cta-down {
+  padding-top: 10px;
+  position: relative;
+  text-align: center;
+  -webkit-animation: bounce 2s infinite;
+  -webkit-animation-iteration-count: 5s infinite;
+}
+.cta-down a {
+  color: rgba(28, 79, 109, 1);
+  font-size: 1.5em;
+}
+.cta-down a:hover, .cta-down a:focus, .cta-down a:active {
+    text-decoration: none;
+}
+/********************* SECTION DOCTORS *********************/
+.single section {
+  background-color: #ffffff;
+}
+.single .col-md-8 b {
+  text-transform: uppercase;
+  font-size: 14px;
+  background-color: #eeeeee;
+  color: #545454;
+  padding: 1px 5px;
+  width: 100%;
+  display: inline-block;
+}
+.doctor-specialty {
+  font-style: italic;
+}
+.doctor-info {
+	background-color: #545454;
+	width: 250px;
+	height: 225px;
+	border-radius: 5px;
+	margin: auto 0;
+	float: left;
+}
+.doc-button {
+  background-color: #1C4F6D;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: relative;
+  top: 2px;
+}
+.doc-button:hover {
+    background-color: rgba(186, 78, 86, 1);
+    transition: 0.5s;
+}
+a.doc-button {
+  color: #ffffff !important;
+  text-align: center;
+  line-height: 1em;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+a.doc-button:hover, a.doc-button:active, a.doc-button:focus {
+    text-decoration: none;
+}
+.doc-title {
+	padding-bottom: 25px;
+}
+.doc-title h2 {
+	font-size: 40px;
+}
+.doc-title h4 {
+  color: #1C4F6D;
+	border-bottom: solid 1.5px #1C4F6D;
+	line-height: 30px;
+	display: inline-block;
+}
+.doctor-row {
+    float: left;
+    width: 33%;
+ }
+.doctor-card {
+  padding: 15px 0 25px 0;
+  background-color: rgba(255,255,255,0.85);
+  border: rgba(28, 79, 109, 0.25) solid 1px;
+  width: 300px;
+  margin: 15px auto;
+}
+.doctor-card, .doc-title {
+  text-align: center;
+}
+.doctor-card img {
+  width: 200px;
+  height: 200px;
+  border: #D5D5D5 solid 2.5px;
+  position: relative;
+}
+#single p {
+	margin: 0;
+	width: 100%;
+	line-height: 2.2em;
+}
+.img-container {
+	text-align: center;
+}
+.img-container img {
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.health-grades .btn, .vitals .btn {
+  text-align: center;
+  margin: 10px;
+}
+/*************** SERVICES STYLES ***************/
+.services {
+  text-align: center;
+}
+.services .fa {
+	font-size: 1.5em;
+	background-color: #A0393C;
+	border-radius: 16px;
+	padding: 20px;
+	color: #ffffff;
+  margin: 20px 0;
+}
+.services .fa-hospital-o {
+	padding: 20px 25px;
+}
+/*************** INSURANCE STYLES ***************/
+.well {
+  background-color: #ffffff; 
+}
+.well ul {
+  padding-left: 12px;
+  font-size: 12px;
+}
+.well ul a {font-size: 12px;}
+.insurances {
+  display: inline-block;
+  background-image: url(library/img/insurances.png);
+  margin: 15px;
+  height: 50px;
+  width: 129px;
+}
+.aetna {        background-position: 0 0; }
+.affinity {     background-position: -285px 205px; }
+.bluecross {    background-position: -840px 0;  }
+.cigna {        background-position: -280px 0;  }
+.emblemHealth { background-position: -840px -50px; }
+.healthNet {    background-position: -1404px -100px;  }
+.hip {          background-position: 0 -100px;  }
+.humana {       background-position: -430px 0;  }
+.magnaCare {    background-position: -140px -50px;  }
+.medicaid {     background-position: -705px -50px;  }
+.medicare {     background-position: -560px -50px;  }
+.multiPlan {    background-position: -280px -50px;  }
+.oxford {       background-position: -1400px -50px;  }
+.unhc {         background-position: -700px 0; }
+.vytra {        background-position: -140px -100px; }
+
+/*************** CONTACT US STYLES ***************/
+#contact {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 9px 1px rgba(0, 0, 0, 0.11) inset;
+  -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.11) inset;
+}
+.office {
+  margin-top: 50px;
+}
+.map{
+  width: 100%; 
+}
+#map, #map2 {
+  height: 200px;
+  margin: 20px 0;
+}
+/***** CONTACT FORM STYLES *****/
+#forms {
+  text-align: center;
+}
+/********************* FOOTER STYLES *********************/
+.footer {
+  background-color: rgba(28, 79, 109, 1);
+}
+.footer p {
+  font-size: 12px;
+  margin: 15px 0;
+  letter-spacing: 0.5px;
+  color: rgba(255,255,255,0.8);
+  text-align: right;
+}
+.footer-logo {
+  padding: 7px 0;
+  opacity: 0.8;
+  float: left;
+}
+.footer-logo img {
+  max-width: 100%;
+  height: auto !important;
+  right: 70px;
+  position: relative;
+  transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -o-transform: scale(0.7);
+}
+/********************* MEDIA QUERIES *********************/
+@media (max-width: 1200px){
+  .cta-container h3{
+    font-size: 26px
+  }
+  .cta-container p {
+    font-size: 13px;
+  }
+  .img-container img {
+    width: 310px;
+    height: 310px;
+  }
+}
+@media (max-width: 991px){
+  .navbar-brand {
+    font-size: 25px;
+    padding: 15px 40px;
+    max-width: 290px;
+  }
+  .cta-logo {
+    padding-top: 10px;
+  }
+  .cta-container h3{
+    font-size: 20px
+  }
+   .cta-container p {
+    font-size: 12px;
+  }
+  #hidden {
+    display: none;
+    visibility: hidden;
+  }
+  .doctor-row {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 991px){
+  .full-width-padding {
+    padding: 10px 150px;
+  }
+}
+@media (max-width: 991px) and (min-width: 767px){
+    .cta-container h2 {
+        font-size: 26px;
+    }
+    .well {
+        margin: AUTO;
+        width: 300px;
+    }
+}
+@media (min-width: 768px){
+  .navbar-nav.navbar-right{
+    margin-right: 0 !important;
+  }
+    .navbar-nav > li {
+        margin-left: 5px;
+    }
+}
+@media (max-width: 767px){
+  body {
+    padding: 0;
+  }
+  section {
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .row {
+      margin-left: 0;
+      margin-right: 0;
+  }
+  #home {
+    margin: 0 80px;
+  }
+  .navbar-fixed-top {
+    padding: 0 5px;
+  }
+  .navbar-collapse {
+    background-color: rgba(28, 79, 109, 1);
+  }
+  .contact {
+    background-color: transparent;
+  }
+  .navbar-brand, .navbar-brand a:hover  {
+    font-size: 25px;
+    background-color: transparent !important;
+    padding: 13px 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .nav li > a:focus, .nav li > a:hover, .nav > .active {
+    border-bottom: none;
+  }
+  #about {
+      height: 410px;
+  }
+  #about, #insurance {
+    text-align: center;
+  }
+  .cta-container {
+      top: 40px;
+      position: relative;
+  }
+  .insurances {
+    margin: 7px;
+  }
+  .well {
+      width: 85%;
+      margin: auto;
+  }
+  .cta-down a {
+      font-size: 1.2em;
+  }
+  .cta-button {
+    display: none;
+    visibility: hidden;
+  }
+  .doctor-row {
+    float: left;
+    width: 100%;
+  }
+  .doc-title h2 {
+    font-size: 30px;
+  }
+  /* Footer */
+  .footer, .footer-logo {
+    text-align: center !important;
+    clear: both;
+    float: none; 
+  }
+  .footer-logo img {
+    right: 0;
+  }
+  .footer p {
+    margin: 5px 0 0 0;
+    bottom: 10px;
+    position: relative;
+    text-align: center;
+    font-size: 10px;
+  }
+}
+@media (min-width: 767px) {
+  .tablet {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media (max-width: 480px){
+  .header-contact li, .header-contact a {
+      font-size: 11px;
+      padding: 2px 2px 0 2px;
+      font-weight: 600;
+  }
+  .navbar-brand, .navbar-brand a:hover {
+    padding: 15px;
+  }
+  .tablet, .map {
+    display: none;
+    visibility: hidden;
+  }
+  .img-container img {
+    width: 275px;
+    height: 275px;
+  }
+   #home {
+    margin: 0 20px;
+  }
+   .doctor-card {
+       width: 90%;
+   }
+  .doc-title h4 {
+    font-size: 14px;
+    margin: 0 40px;
+  }
+  h2, .doc-title h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 20px
+  }
+  p {
+    font-size: 14px;
+  }
+}

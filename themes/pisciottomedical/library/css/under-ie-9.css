@@ -1,0 +1,49 @@
+body {
+    padding-top: 112px !important;
+}
+/*Logo*/
+.logo {
+    position: relative;
+        left: 0 !important;
+        top: -10px;
+    width: 275px;
+}
+/*Jumbotron*/
+.jumbotron {
+}
+/*Nav*/
+.navbar-fixed-top {
+    top: 52px;
+}
+.navbar-fixed-top .navbar li a {
+    border-right: solid 1px #69AEC5;
+}
+#home .location li:first-child {
+    border-right: solid 1px #85A982;
+}
+/*Content*/
+.col-centered {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80% !important;
+}
+.img-thumbnail {
+    width: 300px;
+}
+#home, #error {
+     behavior: url('backgroundsize.min.htc');
+     -ms-behavior: url('http://wuhwebsites.winthrop.org/pisciotto_wordpress/backgroundsize.min.htc');
+ }
+
+.map {
+    height: 720px;
+}
+
+.alert-warning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1060;
+}

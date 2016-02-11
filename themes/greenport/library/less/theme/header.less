@@ -1,0 +1,25 @@
+/********************* Header *********************/
+.header-fixed-top {
+  border-top: @winthrop-green solid 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1060;
+  background-color: @white;
+  box-shadow: rgba(0,0,0,0.4) 1px 1px 1px;
+  height: 60px;
+
+  a.title {
+    float: left;
+    color: darken(@winthrop-green, 25%);
+    position: relative;
+    bottom: 5px;
+  }
+  .header-logo {
+    float: right;
+    position: relative;
+    bottom: 10px;
+  }
+}

@@ -1,0 +1,54 @@
+.header-contact {
+	background-color: #ffffff;
+}
+.navbar-default, .navbar-fixed-top {
+	background-color: #1c4f6d !important;
+	border-bottom-color: transparent; 
+}
+.nav li a {
+	bottom: 7px;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus, li.active > a {
+	background-color: #163344;
+}
+.contact {
+    background-color: #BA4E56;
+}
+h2 {
+	color: #1c4f6d;
+}
+#home {
+	background-color: #ffffff;
+	opacity: 0.75;
+}
+.cta-logo {
+	margin: auto;
+	padding-bottom: 10px;
+	width: 250px;
+}
+.doctor-card {
+	background-color: #ffffff;
+	border: solid 1.5px #c5d1d9;
+}
+.doctor-card img {
+	border: none;
+}
+.map {
+	max-width: 300px;
+}
+.footer {
+	background-color: #1c4f6d;
+}
+.footer p {
+	color: #ffffff;
+}
+.footer-logo {
+	margin-left: 20px;
+	max-width: 275px;
+}
+#about {
+    behavior: url('http://wuhwebsites.winthrop.org/eastend_cardio_wordpress/backgroundsize.min.htc');
+    -ms-behavior: url('http://wuhwebsites.winthrop.org/eastend_cardio_wordpress/backgroundsize.min.htc');
+}

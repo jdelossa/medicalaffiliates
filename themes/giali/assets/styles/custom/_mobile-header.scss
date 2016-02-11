@@ -1,0 +1,48 @@
+
+.mobile-header {
+  display: none;
+}
+@media (max-width: 768px) {
+  body {
+    border-top: none !important;
+    padding-top: 50px;
+  }
+  .mobile-header {
+    background: none repeat scroll 0 0 $brand-primary;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.11);
+    display: block;
+    padding: 7px 5px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    .button1, .button2 {
+      background-color: $brown;
+      box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.11) inset;
+        -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.11) inset;
+      display: inline-block;
+      float: left;
+      margin: 0 1%;
+      width: 48%;
+      text-align: center;
+      a {
+        color: $white;
+        display: inherit;
+      }
+      &:hover, &:active, &:focus {
+        background-color: darken($brown, 5%);
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    padding-top: 45px;
+  }
+  .mobile-header {
+    .button1, .button2 {
+      font-size: 12px;
+    }
+  }
+}

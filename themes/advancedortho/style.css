@@ -1,0 +1,941 @@
+/*
+Theme Name:         Advanced Orthopaedic Specialists
+Theme URI:          https://advancedortho.com
+Description:        A Advanced Orthopaedic Specialists Theme
+Version:            1.0
+Author:             Winthrop Web
+Author URI:         https://www.winthrop.org/
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+.map {
+  height: 100%;
+  width: 100%;
+}
+#rockville-map,
+#garden-map {
+  height: 300px !important;
+  width: 100% !important;
+}
+#rockville-centre,
+#garden-city {
+  text-align: center !important;
+}
+/***** CONTACT FORM STYLES *****/
+form.wpcf7-form {
+  text-align: center;
+}
+.wpcf7-form p {
+  text-align: left;
+  /*color: #3482A1;*/
+}
+.wpcf7-form input {
+  height: 30px;
+  width: 100%;
+  border: solid 1px #16244E;
+  border-radius: 5px;
+}
+.wpcf7-form textarea {
+  height: 60px;
+  width: 100%;
+  border: solid 1px #16244E;
+  border-radius: 5px;
+}
+.wpcf7-submit {
+  border: none !important;
+  background-color: #6BA025;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.wpcf7-validation-errors {
+  display: none;
+  visibility: hidden;
+}
+.wrap {
+  background-color: #ffffff;
+  border: #ccc solid 1px;
+}
+/* Removed BOOTSTRAP Padding! */
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.content {
+  padding: 10px 20px;
+}
+.row {
+  margin: 0;
+}
+.line-separator {
+  background-image: url(../img/separator.png);
+}
+.separator {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin: 15px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.location,
+#medical-staff-rc,
+#medical-staff-gc,
+#contact-rc,
+#contact-gc {
+  padding: 25px 0;
+}
+.header {
+  text-align: center;
+}
+.location h2,
+#medical-staff-rc h2,
+#medical-staff-gc h2,
+#contact-rc h2,
+#contact-gc h2 {
+  margin: 0;
+  display: inline-block;
+  background-color: #eef2f3;
+  padding: 25px 75px;
+  border: 1px solid #ccc;
+}
+/********************* CONTENT STYLES *********************/
+.margin-top {
+  margin-top: 85px;
+}
+#error-page {
+  text-align: center;
+}
+.footer {
+  background: #17546C;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.footer p {
+  font-size: 12px;
+  margin: 15px 0;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: right;
+}
+.footer-logo {
+  padding: 7px 0;
+  opacity: 0.8;
+  float: left;
+}
+.footer-logo img {
+  max-width: 100%;
+  height: auto !important;
+  right: 70px;
+  position: relative;
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -o-transform: scale(0.7);
+}
+.header-contact {
+  height: 30px;
+  background-color: #17546C;
+  position: fixed;
+  z-index: 1060;
+  width: 100%;
+  -webkit-animation: fadein 0.7s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.7s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 0.7s;
+  /* Internet Explorer */
+  -o-animation: fadein 0.7s;
+  /* Opera < 12.1 */
+  animation: fadein 0.7s;
+}
+.header-contact ul {
+  padding-left: 0 !important;
+  margin-bottom: 0;
+}
+.header-contact li {
+  display: inline-block;
+  margin-top: 5px;
+}
+.header-contact,
+.header-contact a {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0;
+  top: 0;
+  text-transform: uppercase;
+}
+.header-contact a:hover {
+  color: #ffffff;
+}
+#hero {
+  padding-left: 0;
+  padding-right: 0;
+}
+#home,
+#error {
+  background-image: url('library/img/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: solid 1px #ccc;
+  height: 500px;
+  padding: 0;
+  position: relative;
+  margin-top: 85px;
+}
+.cta {
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.11) inset;
+  -webkit-box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.11) inset;
+  position: relative;
+  top: 110px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  float: right;
+  margin: 0 1%;
+  text-align: center;
+  display: inline-block;
+}
+.cta-container {
+  color: #ffffff;
+  z-index: 999;
+  margin: 15px;
+  -webkit-animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -ms-animation: fadein 1s;
+  -o-animation: fadein 1s;
+  animation: fadein 1s;
+}
+.cta-container h2 {
+  font-weight: 500;
+  font-size: 34px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-shadow: #3482A1 1px 1px 1px;
+  color: #17546C;
+  margin-top: 15px;
+}
+.cta p {
+  color: #17546C;
+  opacity: 0.8;
+  margin-top: 20px;
+}
+.cta-down {
+  font-size: 1.5em;
+  position: absolute;
+  width: 95%;
+  margin-top: 50px;
+  -webkit-animation: bounce 2s infinite;
+  -webkit-animation-iteration-count: 5s infinite;
+}
+.cta-down a {
+  color: #17546C;
+}
+.cta-down a:hover {
+  text-decoration: none;
+  color: #3482A1;
+}
+.cta-logo {
+  position: relative;
+  text-align: center;
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -o-transform: scale(0.7);
+}
+.cta-logo img {
+  max-width: 100%;
+}
+.navbar-fixed-top {
+  top: 30px;
+  background-color: #3482A1;
+  z-index: 1060;
+  -webkit-animation: fadein 0.7s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.7s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 0.7s;
+  /* Internet Explorer */
+  -o-animation: fadein 0.7s;
+  /* Opera < 12.1 */
+  animation: fadein 0.7s;
+}
+.navbar-default {
+  border-color: transparent;
+}
+.navbar {
+  margin-bottom: 0 !important;
+}
+.navbar-header {
+  margin: 10px 0;
+}
+a.title {
+  color: #ffffff;
+  font-size: 24px;
+}
+a.title:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+.nav {
+  float: right;
+  position: relative;
+  top: 12px;
+}
+.navbar li {
+  display: inline-block;
+  float: none !important;
+}
+.navbar li > a:focus,
+.navbar li > a:hover,
+#navbar li.active {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.11) !important;
+  box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.11) inset;
+  -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.11) inset;
+  border-radius: 10px;
+}
+.navbar > li > a,
+.back > li > a {
+  padding: 5px 15px 5px !important;
+  text-shadow: none !important;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.contact-button a {
+  border-radius: 10px;
+  color: #ffffff !important;
+  background-color: #6BA025 ;
+}
+.contact-button a:hover,
+li.contact-button.active a {
+  background-color: #6b9138 !important;
+}
+/* Single Post (Doctor Profile  Needs different colored text) */
+.single.single-post li.about,
+.single.single-post li.services,
+.single.single-post li.medical-staff,
+.page-id-2 ul.back,
+.page-id-10 ul.back,
+.page-id-15 ul.back,
+.error404 ul.back {
+  display: none;
+  visibility: hidden;
+}
+.single.single-post .nav > li > a,
+.back > li > a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+/* Single Post Page has back button */
+.back {
+  position: relative;
+  top: 18px;
+  float: left;
+  left: 425px;
+}
+ul.back {
+  padding-left: 0;
+}
+.tab-content,
+.doctor-page {
+  margin-bottom: 30px;
+}
+#nav-tabs {
+  padding-left: 0;
+  padding-right: 0;
+}
+.nav-tabs {
+  top: 0;
+}
+.nav-tabs > li > a {
+  text-align: center;
+  font-size: 30px;
+  /* h2 size */
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 25px 15px;
+  border-radius: 0 !important;
+  background-color: #eef2f3;
+  color: #545454;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  background-color: #eef2f3;
+  color: #3482A1;
+  background-color: #ffffff;
+  border: none !important;
+}
+li.rockville-centre.active {
+  border-right: solid 1px #ccc;
+}
+li.garden-city.active {
+  border-left: solid 1px #ccc;
+}
+#rockville-centre p,
+#garden-city p {
+  margin-top: 25px;
+}
+/********************* ABOUT STYLES *********************/
+#rockville-centre h2,
+#garden-city h2 {
+  text-align: center;
+  color: #545454;
+}
+#services {
+  margin: auto auto;
+  text-align: center;
+  display: inline-block;
+}
+#services h4 {
+  color: #545454;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
+#services p {
+  color: #17546C;
+  text-align: center;
+}
+#services .fa {
+  font-size: 6em;
+  color: rgba(23, 84, 108, 0.8);
+  text-align: center;
+  width: 100%;
+  margin: 15px 0;
+  background-color: transparent;
+  position: relative;
+  right: 5px;
+}
+.fa-ambulance:before {
+  padding: 20px;
+  border-radius: 100%;
+}
+.fa-stethoscope:before,
+.fa-hospital-o:before,
+.fa-user-md:before {
+  padding: 20px 25px;
+  border-radius: 100%;
+}
+/***** DOCTOR *****/
+.left-single h2 {
+  margin: 20px 0;
+}
+.desktop {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.single .col-md-8 b {
+  text-transform: uppercase;
+  font-size: 14px;
+  background-color: #eeeeee;
+  color: #4b708b;
+  padding: 1px 5px;
+  width: 100%;
+  display: inline-block;
+}
+.doctor-card {
+  text-align: center;
+  margin: 25px 10px;
+}
+.doctor-card img {
+  width: 275px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+.doc-hours {
+  background-color: #eeeeee;
+  margin: 10px 10px 10px 0;
+  padding: 2px 5px;
+}
+.doc-hours h3,
+.doc-hours h5 {
+  text-align: center;
+}
+.doc-hours p {
+  padding: 5px;
+}
+.img-container img {
+  width: 97%;
+}
+.health-grades .btn,
+.vitals .btn {
+  margin: auto auto;
+  text-align: center;
+}
+.left-single {
+  margin-top: 25px;
+}
+@media (min-width: 1200px) {
+  .health-grades .btn,
+  .vitals .btn,
+  .img-container img,
+  .doc-hours {
+    width: 90%;
+  }
+  .back {
+    left: 500px;
+  }
+  .container {
+    width: 1170px !important;
+  }
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+  .health-grades .btn,
+  .vitals .btn {
+    width: 97%;
+  }
+  .btn-lg {
+    font-size: 16px;
+  }
+  .back {
+    left: 250px;
+  }
+  .doctor-card img {
+    width: 200px;
+    height: 225px;
+    margin: 10px auto;
+  }
+  .location {
+    padding-right: 8px;
+  }
+  .tel {
+    font-size: 19px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 767px) {
+  .header-contact,
+  .navbar-default {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 992px) {
+  .health-grades .btn,
+  .vitals .btn {
+    width: inherit;
+  }
+  .desktop {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+@media (min-width: 992px) {
+  .left-single {
+    margin-left: 20px;
+  }
+  .mobile {
+    display: none !important;
+    visibility: hidden;
+  }
+  .border-left {
+    border-left: 2px #ccc solid;
+    margin-top: 50px;
+  }
+  .container {
+    width: inherit;
+  }
+}
+@media (max-width: 991px) {
+  .cta-container h2 {
+    font-size: 28px;
+  }
+  .cta p {
+    font-size: 14px;
+  }
+  .navbar a.title {
+    font-size: 18px;
+  }
+  .back {
+    left: 150px;
+    top: 15px;
+  }
+  .img-container img {
+    width: 350px;
+  }
+  .map {
+    right: 0;
+    width: 100%;
+  }
+  #home {
+    margin-top: 80px;
+  }
+  .navbar .nav {
+    top: 8px;
+  }
+  .content,
+  .left-single {
+    text-align: center;
+  }
+  .margin-top {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 991px) and (min-width: 767px) {
+  /*Doctor Images*/
+  #office1 .col-md-4 {
+    float: left;
+    width: 33%;
+  }
+  /*Doctor Images*/
+  #office2 .col-md-6 {
+    float: left;
+    width: 50%;
+  }
+}
+@media (max-width: 991px) and (min-width: 480px) {
+  .doc-hours {
+    margin: 10px auto;
+    width: 350px;
+  }
+  #services .col-md-3 {
+    width: 50%;
+    float: left;
+  }
+  #services .col-md-4 {
+    width: 33%;
+    float: left;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: inherit;
+  }
+}
+@media (max-width: 767px) {
+  /*Header Contact*/
+  .header-contact li {
+    margin: 5px 10px 0 10px;
+  }
+  .navbar-fixed-top .container {
+    width: auto !important;
+  }
+  /*Nav Bars*/
+  .page-id-5 .nav,
+  .page-id-8 .nav,
+  .page-id-10 .nav,
+  .page-id-15 .nav,
+  .error404 .nav {
+    float: none;
+    clear: both;
+  }
+  .back {
+    top: 15px;
+    left: 100px;
+  }
+  .single .navbar .nav {
+    right: 100px;
+  }
+  .nav {
+    text-align: center;
+  }
+  .navbar > li > a {
+    font-size: 14px;
+    padding: 5px 20px 5px !important;
+  }
+  /*CTA*/
+  #home {
+    border-bottom: none;
+  }
+  /*Nav Tabs*/
+  .nav-tabs.nav-justified > li {
+    float: left;
+    width: 50%;
+  }
+  .nav-tabs > li > a {
+    font-size: 22px;
+    padding: 15px 10px;
+  }
+  /*Page Styles*/
+  .wrap {
+    margin-bottom: 70px;
+  }
+  .content {
+    padding: 10px ;
+  }
+  #home {
+    margin: 130px 0 0 0;
+  }
+  .margin-top {
+    margin-top: 135px;
+  }
+  .border-left {
+    border: none;
+  }
+  .navbar-header {
+    text-align: center;
+  }
+  .navbar a.title {
+    float: none;
+    text-align: center;
+    font-size: 22px;
+  }
+  /*Footer*/
+  .footer,
+  .footer-logo {
+    text-align: center !important;
+    clear: both;
+    float: none;
+  }
+  .footer-logo img {
+    right: 0;
+  }
+  .footer p {
+    margin: 5px 0 0 0;
+    bottom: 10px;
+    position: relative;
+    text-align: center;
+    font-size: 10px;
+  }
+}
+@media (min-width: 767px) {
+  /*CTA*/
+  .home .wrap {
+    position: relative;
+    bottom: 25px;
+  }
+}
+@media (max-width: 480px) {
+  h3 {
+    font-size: 20px;
+  }
+  p,
+  a {
+    font-size: 12px;
+  }
+  .header-contact li,
+  .header-contact a {
+    font-size: 11px;}
+  /*Nav Bar*/
+  .navbar-fixed-top {
+    height: 85px;
+  }
+  .navbar .nav {
+    top: 0;
+  }
+  .single .navbar .nav {
+    right: 50px;
+  }
+  .back {
+    top: 3px;
+    left: 50px;
+  }
+  .navbar a.title {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  .navbar > li > a,
+  .back > li > a {
+    padding: 5px 8px !important;
+    font-size: 11px;
+  }
+  .navbar li > a:focus,
+  .nav li > a:hover,
+  #navbar li.active,
+  .contact-button a {
+    border-radius: 10px;
+  }
+  /*CTA*/
+  #home {
+    height: 200px;
+    margin-top: 115px;
+  }
+  .location,
+  #medical-staff-rc,
+  #medical-staff-gc,
+  #contact-rc,
+  #contact-gc {
+    padding: 10px 0;
+  }
+  #services {
+    padding: 25px 0;
+  }
+  #rockville-centre h2,
+  #garden-city h2 {
+    font-size: 18px;
+  }
+  .mobile-logo {
+    top: 272px;
+    position: absolute;
+    transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -o-transform: scale(0.6);
+  }
+  .mobile-logo img {
+    max-width: 100%;
+  }
+  .cta,
+  .cta-down {
+    display: none;
+  }
+  /*Nav Tabs*/
+  .nav-tabs > li > a {
+    font-size: 15px;
+  }
+  .nav-tabs.nav-justified > li > a {
+    margin-bottom: 1px;
+    border-bottom: solid 1px #ccc;
+  }
+  /*About*/
+  .doctor-card img {
+    width: 225px;
+    height: 250px;
+  }
+  .margin-top {
+    margin-top: 105px;
+  }
+  #rockville-map,
+  #garden-map {
+    display: none;
+    visibility: hidden;
+  }
+  #services .fa {
+    font-size: 4em;
+  }
+  /*Doctor Page*/
+  .left-single h2 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 481px) {
+  .mobile-logo {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media (max-width: 400px) {
+  .navbar {
+    min-height: 30px;
+  }
+  .cta-container h2 {
+    font-size: 28px;
+  }
+  .content h2 {
+    font-size: 26px;
+  }
+  .navbar a.title {
+    font-size: 20px;
+  }
+  .content h4 {
+    font-size: 16px;
+  }
+  .img-container img {
+    width: 100%;
+  }
+  .header-contact li,
+  .header-contact a {
+    font-size: 9px;
+    position: relative;
+    top: 2px;
+    font-weight: 600;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(5px);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(0px);
+  }
+}
+/********************* HTML ELEMENTS *********************/
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  background-color: #eee;
+  overflow-x: hidden;
+}
+body,
+#rockville-map,
+#garden-map {
+  width: 100%;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #3482A1;
+}
+p,
+address,
+.doctor-specialty {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #575757;
+}
+section p {
+  line-height: 1.75em;
+}
+a,
+a:hover {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #6BA025 ;
+}
+a.title:hover {
+  text-decoration: none !important;
+}
+ul {
+  list-style: none;
+}

@@ -1,0 +1,275 @@
+
+@media (max-width: 991px) and (min-width: 480px){
+  .img-container img {
+    max-width: 300px;
+  }
+}
+@media(max-width: 991px){
+  section {
+    text-align: center;
+  }
+  .doctor-card img {
+    width: 200px;
+  }
+}
+@media(max-width: 979px){
+  .header{
+    padding: 0 10px;
+  }
+  .locations{
+    padding: 0 15px;
+  }
+  .navbar-brand a {
+    margin: 0 5px;
+  }
+  .sidebar-nav {
+    margin-right: 10px;
+  }
+}
+@media(max-width: 820px) {
+  /********************* HEADER STYLES *********************/
+  .header {
+    height: inherit;
+  }
+  .navbar-brand {
+    float: none;
+    text-align: left;
+    padding: 10px 0 10px 0;
+    display: inline-block;
+    width: 100%;
+  }
+  .navbar-brand a {
+    font-size: 23px;
+    bottom: 0;
+  }
+  /********************* SIDEBAR WRAPPER STYLES *********************/
+  #wrapper {
+    left: 0px;
+    position: relative;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  #wrapper.toggled {
+    left: 150px;
+    position: relative;
+  }
+  #sidebar-wrapper {
+    width: 0px;
+  }
+  #sidebar-wrapper.toggled {
+    width: 150px;
+    height: 100%;
+  }
+  #wrapper.toggled#sidebar-wrapper {
+    width: 0px;
+  }
+  #sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 150px;
+    width: 0;
+    height: 100%;
+    margin-left: -150px;
+    overflow-y: overlay;
+    background: #aaaaa9;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  /********************* SIDEBAR-NAV STYLES *********************/
+  .sidebar-nav {
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    list-style: none;
+    position: relative;
+  }
+  .sidebar-nav li {
+    display: block;
+    text-align: left;
+    padding-left: 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    line-height: 60px;
+  }
+  .about {
+    padding-right: 61px !important;
+  }
+  .sidebar-nav > li > a {
+    text-shadow: none !important;
+    border-left: solid 10px transparent;
+    border-radius: 0;
+    padding: 19px 46px 23px 10px;
+    color: #f2f2f2;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+  .sidebar-nav li > a:focus,
+  .sidebar-nav li > a:hover{
+    transition-duration: 0.4s;
+    color: #4b708b;
+    background-color: #ccc;
+    text-shadow: #fff 1px 1px 1px;
+    text-decoration: none;
+    border-left: solid 10px #4b708b;
+  }
+  /********************* SIDEBAR BUTTON STYLES *********************/
+  .navbar-toggle {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    background-color: #ccc;
+    padding: 6px 8px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .navbar-toggle:hover {
+    color: #263A49;
+    text-decoration: none;
+    opacity: 0.7;
+  }
+  .navbar-toggle .icon-bar {
+    background-color: #263A49;
+    width: 18px;
+  }
+}
+@media(min-width: 820px){
+  .navbar-toggle {
+    display: none;
+  }
+  a.contact {
+    background-color: #4b708b;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #ffffff !important;
+  }
+}
+@media(min-width: 768px){
+  .navbar-toggle {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  /********************* Font STYLES *********************/
+  h3 {
+    font-size: 23px;
+  }
+  .cta {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .cta h2 {
+    font-size: 20px;
+  }
+  /********************* Insurances *********************/
+  .insurances {
+    margin: 15px 5px;
+  }
+  /********************* LOCATION STYLES *********************/
+  .locations {
+    padding: 0 5px;
+  }
+  /*********************  Header Logo STYLES *********************/
+  img.logo {
+    width: 90%;
+  }
+  /********************* FOOTER STYLES *********************/
+  footer, .footer-logo {
+    text-align: center !important;
+    float: none;
+    clear: both;
+  }
+  .footer-logo img {
+    right: 0;
+  }
+  .footer p {
+    margin: 5px 0 0 0;
+    bottom: 10px;
+    position: relative;
+    text-align: center;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px){
+  /********************* FONT, MOBILE FRIENDLY STYLES *********************/
+  .navbar-brand a {
+    font-size: 17px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  section .header-info,.locations li, .locations li a {
+    font-size: 12px;
+  }
+  .locations li {
+    bottom: 12px;
+  }
+  p,a,address,ul,.doctor-specialty {
+    font-size: 14px;
+  }
+  .header {
+    top: 25px;
+  }
+  .locations {
+    height: 25px;
+  }
+  .jumbotron {
+    margin-top: 25px;
+    height: 200px;
+  }
+  .cta-container {
+    display: none;
+  }
+  .cta-logo {
+    top: 175px;
+  }
+  .cta-logo img {
+    transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+  }
+  /********************* PAGE CONTENT STYLES *********************/
+  #overlap {
+    margin-top: 0;
+  }
+  #page-content-wrapper {
+    width: 100%;
+    padding: 5px;
+  }
+  #about {
+    margin-top: 10px;
+  }
+  .health-grades a, .vitals a {
+    font-size: 14px;
+  }
+  /********************* SIDEBAR-NAV STYLES *********************/
+  .navbar-toggle {
+    top: 0;
+  }
+  /********************* CONTACT US STYLES *********************/
+  .map {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media(max-width: 370px){
+  .navbar-brand a {
+    font-size: 15px;
+  }
+}
+
+

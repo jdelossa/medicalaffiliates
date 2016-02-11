@@ -1,0 +1,157 @@
+
+header.banner {
+  background: $white;
+  padding-top: 30px;
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .brand {
+    color: $brown;
+    font-size: 24px;
+    text-transform: uppercase;
+    &:hover, &:active, &:focus {
+      text-decoration: none;
+    }
+  }
+  .header-logo {
+    clear: right;
+    display: block;
+    float: right;
+    margin: 0;
+    position: relative;
+      bottom: 2px;
+    width: 275px;
+  }
+}
+
+.home {
+  .page-header:first-child {
+    display: none;
+  }
+}
+
+.page-header {
+  background-color: $brand-primary;
+  border-bottom: solid 5px $light-blue;
+  margin: 0;
+  padding-bottom: 0;
+  position: relative;
+    bottom: 20px;
+  h1 {
+    color: $white;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 15px 0 15px;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@media (max-width: 991px) {
+  header.banner {
+    padding-top: 50px;
+    .brand {
+      display: block;
+      font-size: 22px;
+      position: relative;
+        bottom: 25px;
+      text-align: center;
+      width: 100%;
+    }
+    img {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+    .header-logo {
+      position: absolute;
+        top: 65px;
+        left: 0px;
+        right: 0px;
+      clear: both !important;
+      display: block;
+      float: none !important;
+      margin: 0 auto;
+      width: 255px;
+    }
+  }
+  .admin-bar {
+    header.banner {
+      .header-logo {
+        top: 95px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header.banner {
+    padding-top: 15px;
+    .brand {
+      display: block;
+      font-size: 20px;
+      position: relative;
+        bottom: 5px;
+      text-align: center;
+      width: 100%;
+    }
+    img {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+    .header-logo {
+      position: absolute;
+        top: 92px;
+        left: 0px;
+        right: 0px;
+      clear: both !important;
+      display: block;
+      float: none !important;
+      margin: 0 auto;
+      width: 215px;
+    }
+  }
+  .admin-bar {
+    padding-top: 0;
+    header.banner {
+      .header-logo {
+        top: 85px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  header.banner {
+    .brand {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  header.banner {
+    .brand {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  header.banner {
+    .brand {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  header.banner {
+    .header-logo {
+      top: 85px;
+      width: 200px;
+    }
+  }
+}

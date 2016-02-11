@@ -1,0 +1,570 @@
+/*
+Theme Name: Winthrop Medical
+Author: Winthrop Web Team
+Description: The first base theme for Winthrop medical affiliates.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@white: #ffffff;
+@blue-white: #d1dde2;
+@off-white: #f2f2f2;
+
+@silver: #cccccc;
+
+@pickled-bluewood: #2B4651;
+@san-juan: #375974;
+@bunker: #0d141b;
+@mantis: #71b553;
+
+
+/********************* HTML ELEMENTS *********************/
+html, body {
+  overflow-x: hidden; 
+}
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+    background: url(library/img/background.png);
+	position: relative;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+}
+body, #map {
+  width: 100%;
+}
+h1,h2,h3,h4,h5,h6 {
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+}
+p,a,address,ol,ul,td {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.75em;
+  letter-spacing: 0.03em;
+  color: @pickled-bluewood;
+}
+section {
+	background-color: @white;
+	border: 1px solid @blue-white;
+	border-top: 5px solid @pickled-bluewood;
+	text-align: center;
+	padding: 25px 30px;
+	margin: 20px 0;
+
+    h3 {
+      font-size: 22px;
+    }
+}
+.contact-header {
+	border-top-color: @mantis;
+	.header {
+		padding-bottom: 10px !important;
+		color: @mantis !important;
+		border-bottom-color: @mantis !important;
+
+	}
+}
+a, a:hover { color: @san-juan; text-decoration: none;}
+a.title:hover { text-decoration: none !important; }
+ul { padding-left: 0; }
+hr { border-color: @pickled-bluewood;}
+.col-centered {
+  float: none;
+  margin: auto;
+}
+.line-break {
+  background-color: @san-juan;
+  height: 2.5px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+.line-separator {
+  background-image: url(library/img/winthrop-separator.png);
+}
+.separator {
+  display: block;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/********************* Header *********************/
+.header-static-top {
+  border-bottom: darken(@pickled-bluewood, 10%) solid 5px;
+  position: static;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1060;
+  background-color: @white;
+  box-shadow: rgba(0,0,0,0.4) 1px 1px 1px;
+  height: 125px;
+
+  a.title {
+    float: left;
+    color: @pickled-bluewood;
+    position: relative;
+    top: 5px;
+    &:hover {
+    	text-decoration: none;
+    	color: lighten(@pickled-bluewood, 10%);
+    }
+  }
+  .header-logo {
+    float: right;
+
+  }
+}
+
+/********************* Navbar *********************/
+.navbar-static-top {
+  display: block;
+  bottom: 49px;
+  z-index: 1060;
+
+  .navbar {
+    min-height: 40px !important;
+    margin-bottom: 0 !important;
+  }
+
+  #navbar {
+    display: block;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    margin-bottom: 0;
+
+    li {
+      float: left;
+      width: 25%;
+      height: 100%;
+      padding-top: 12px;
+      background-color: @san-juan;
+      cursor: pointer;
+      border-right: solid 1px @bunker;
+      &:hover {
+      	background-color: lighten(@bunker, 10%);
+      }
+    }
+
+    li.contact-us {
+        background-color: @mantis;
+      border-right: none;
+        &:hover {
+        	background-color: darken(@mantis, 10%);
+     	}
+    }
+
+    a {
+      color: @white;
+      margin: 0 5px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+}
+
+
+/********************* Wrapper *********************/
+#wrapper {
+    width: 100%;
+	position: relative;
+	bottom: 81px;
+
+	.jumbotron-background {
+		height: 250px;
+		position: absolute;
+		width: 100%;
+		background-color: @pickled-bluewood;
+		z-index: -1;
+	}
+	.jumbotron {
+		background: url(library/img/AnzaloneHero.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 300px;
+		margin: 10px auto;
+		z-index: 1060;
+	}
+	.header {
+		border-bottom: solid 1px @san-juan;
+        color: @san-juan;
+		padding: 0 0 15px 0;
+		.specialty {
+			padding-top: 10px;
+			display: block;
+			font-size: 14px;
+		}
+	}
+	.sub-header{
+		display: inline-block;
+		border-bottom: solid 1px @mantis;
+		color: @mantis;
+		padding-bottom: 5px;
+	}
+	.content {
+		padding: 20px;
+	}
+	.sub-section {
+		background-color: @white;
+		border: 1px solid @blue-white;
+		border-top: 3px solid @pickled-bluewood;
+		text-align: center;
+		padding: 5px 30px;
+		margin: 15px 10px;
+
+      .header {
+          padding-top: 10px;
+          text-align: center;
+      }
+      .img-circle {
+          margin: 10px;
+          max-width: 165px;
+          max-height: 165px;
+          width: 165px;
+          height: 165px;
+          border: solid 1px darken(@silver, 2%);
+
+      }
+      .btn {
+			margin-top: 20px;
+			background-color: lighten(@mantis, 7%);
+			border: @mantis;
+			font-size: 12px;
+			font-weight: 400;
+			padding: 7px 20px;
+
+			&:hover {
+				background-color: darken(@mantis, 1%);
+			}
+		}
+		.doctor-name {
+			display: inline-block;
+			margin: 2.5px 0;
+			float: left;
+		}
+		.doctor-specialty {
+			font-weight: bold;
+            position: relative;
+              top: 3px;
+			text-align: right;
+		}
+		.doctor-details {
+			padding-top: 45px;
+
+            p {
+              font-size: 12px;
+            }
+		}
+		.fa-phone {
+			font-size: 30px;
+			color: @pickled-bluewood;
+			margin: 8px 0;
+
+			&:hover {
+				color: @san-juan;
+			}
+		}
+        .insurances {
+          display: inline-block;
+          background-image: url(library/img/insurances.png);
+          margin: 15px;
+          height: 50px;
+          width: 129px;
+        }
+        .aetna {        background-position: 0 0; }
+        .bluecross {    background-position: -840px 0;  }
+        .cigna {        background-position: -280px 0;  }
+        .emblemHealth { background-position: -840px -50px; }
+        .ghi {          background-position: -1400px -145px; }
+        .healthNet {    background-position: -1404px -100px;  }
+        .hip {          background-position: 0 -100px;  }
+        .magnaCare {    background-position: -140px -50px;  }
+        .medicare {     background-position: -560px -50px;  }
+        .multiPlan {    background-position: -280px -50px;  }
+        .oxford {       background-position: -1400px -50px;  }
+        .vytra {        background-position: -140px -100px; }
+
+		.form {
+
+			li {
+				font-size: 12px;
+				text-align: left;
+				border-bottom: solid 1px @silver;
+				list-style-type: none;
+				padding: 6px 0;
+				&:before {
+					content: "\f105";
+					font-family: FontAwesome;
+					color: @mantis;
+					padding-right: 4px;
+					font-size: 11px;
+				}
+			}
+		}
+	}
+	#map {
+		width: 100%;
+		height: 250px;
+		margin-bottom: -85px;
+		position: relative;
+		bottom: 70px;
+		z-index: -1;
+	}
+}
+#single-doctor {
+	margin-top: 65px;
+	.header {
+		text-align: center;
+		border-bottom: none;
+	}
+	.img-container img {
+		max-width: 100%;
+		border-radius: 100%;
+		border: solid 1px darken(@silver, 2%);
+        height: 225px;
+	}
+	.btn {
+		font-size: 12px;
+		text-align: center;
+		background-color: lighten(@mantis, 7%);
+		border: @mantis;
+	}
+	.profile {
+		text-align: left;
+		b {
+			text-transform: uppercase;
+			font-size: 12px;
+			background-color: @silver;
+			color: @pickled-bluewood;
+			padding: 2px 5px;
+			width: 100%;
+			display: inline-block;
+		}
+	}
+	#padding-top {
+		padding-top: 10px;
+	}
+
+}
+footer {
+	.footer {
+        position: relative;
+          bottom: 50px;
+   		width: 100%;
+   		h4, p {
+   			color: @san-juan;
+   			text-align: center;
+   			margin-top: 25px;
+   		}
+      p {
+        font-size: 12px;
+      }
+   	}
+}
+@media (max-width: 991px){
+	.header-static-top {
+		a.title {
+			padding-left: 10px;
+		}
+		.header-logo {
+			padding-right: 10px;
+		}
+	}
+	#wrapper {
+		.content {
+			padding: 10px;
+		}
+	}
+	#single-doctor{
+        .profile {
+          margin-top: 15px;
+        }
+		.btn {
+			margin: 0 0 15px 0;
+		}
+
+	}
+}
+@media (max-width: 979px){
+	#wrapper{
+      .jumbotron-background {
+          height: 0;
+      }
+	}
+}
+@media (min-width: 924px){
+  #navbar {
+    li {
+      a.about {
+        padding: 17px 77px;
+      }
+      a.medical-staff {
+        padding: 17px 63px;
+      }
+      a.patient-information {
+        padding: 17px 80px;
+      }
+      a.contact {
+        padding: 17px 70px;
+      }
+    }
+  }
+}
+@media (max-width: 840px) {
+    #wrapper{
+      .sub-section {
+        .img-circle {
+          max-width: 145px;
+          max-height: 145px;
+        }
+      }
+    }
+}
+@media (max-width: 767px){
+	.mobile-contact {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding-top: 1px;
+		height: 35px;
+		z-index: 1080;
+		background-color: @san-juan;
+		li {
+			list-style-type: none;
+			float: left;
+			text-align: center;
+			width: 48%;
+			color: @white;
+			border: @pickled-bluewood soild 1px;
+			background-color: rgba(0,0,0,0.4);
+			border-radius: 5px;
+			margin: 0.6% 1%;
+			a {
+				color: @white;
+				font-size: 9px;
+				position: relative;
+				bottom: 2px;
+
+			}
+		}
+	}
+	.header-static-top {
+		height: 160px;
+		margin-top: 30px;
+		a.title {
+			padding-left: 0;
+			text-align: center;
+			width: 100%;
+			h3 {
+				font-size: 20px;
+			}
+		}
+		.header-logo {
+			padding-right: 0;
+			text-align: center;
+			width: 100%;
+			position: relative;
+			bottom: 10px;
+		}
+	}
+	.navbar-static-top {
+		border-top: solid 3px darken(@pickled-bluewood, 10%);
+		#navbar {
+			li {
+				font-size: 10px;
+			}
+		}
+	}
+	#wrapper {
+		h3.header {
+			font-size: 20px;
+		}
+		.sub-section{
+          margin: 15px auto;
+          width: 400px;
+
+          .btn {
+              margin-bottom: 15px;
+          }
+          .doctor-details {
+              padding-top: 10px;
+          }
+		}
+	}
+
+}
+@media (max-width: 480px) {
+	.mobile-contact {
+		padding-top: 3px;
+	}
+	.header-static-top {
+		a.title {
+			h3 {
+				font-size: 18px;
+			}
+		}
+		.header-logo img {
+			transform: scale(0.8);
+		    -ms-transform: scale(0.8);
+		    -webkit-transform: scale(0.8);
+		    -moz-transform: scale(0.8);
+		    -o-transform: scale(0.8);
+
+		}
+	}
+	#wrapper {
+		.jumbotron {
+			height: 200px;
+		}
+      .sub-section {
+        width: 350px;
+
+        .insurance  {
+          li {
+            font-size: 7px;
+            margin: 10px 0px;
+            width: 105px;
+          }
+        }
+      }
+	}
+}
+@media (max-width: 380px) {
+	.navbar-static-top {
+		#navbar {
+			li {
+				font-size: 10px;
+			}
+			a {
+				margin: 0 1px;
+			}
+
+		}
+	}
+	#wrapper {
+		.sub-section {
+            width: 300px;
+			.doctor-name, .doctor-specialty {
+				display: block;
+				padding-left: 0;
+                text-align: center;
+                width: 100%;
+			}
+            .doctor-specialty {
+              font-size: 11px;
+            }
+		}
+	}
+}

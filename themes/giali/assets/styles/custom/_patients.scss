@@ -1,0 +1,29 @@
+.patients {
+  .wpcf7-form {
+    margin: 0;
+    .top-margin {
+      margin-top: 25px;
+    }
+    .form-group  {
+      display: inline-block;
+      margin-right: 2%;
+      width: 47%;
+    }
+    .frequency {
+      width: 40%;
+    }
+    .dosage-frequency {
+      margin-left: 2%;
+    }
+    .pills-num, .your-message {
+      width: 98%;
+    }
+    .btn-primary {
+      width: 50%;
+    }
+    .help-block {
+      display: table-row-group;
+    }
+  }
+
+}

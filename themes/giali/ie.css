@@ -1,0 +1,76 @@
+/* browser alert */
+.alert {
+    margin-bottom: 0;
+}
+header.banner {
+    padding-top: 30px;
+}
+a.brand, .brand-small {
+    padding-left: 15px;
+}
+.header-logo {
+    padding-right: 15px;
+}
+.icon-phone:before {
+    left: 36px !important;
+}
+.jumbotron {
+    background-size: cover !important;
+    background-position: center !important;
+    background-position-y: 20% !important;
+    behavior: url('http://wuhwebsites.winthrop.org/giali_wordpress/backgroundsize.min.htc');
+        -ms-behavior: url('http://wuhwebsites.winthrop.org/giali_wordpress/backgroundsize.min.htc');
+    z-index: 0;
+}
+#menu-main-menu > li.menu-item-63 {
+    border-right: none;
+    float: right;
+}
+#menu-main-menu > li.menu-item-63 > a {
+    text-align: right;
+}
+#menu-main-menu > li.menu-item-63 > a:hover,
+#menu-main-menu > li.menu-item-63 > a:active,
+#menu-main-menu > li.menu-item-63 > a:focus {
+    background-color: transparent;
+}
+.mission {
+    background-color: #6A665A;
+}
+
+.col-centered {
+    float: none !important;
+}
+
+#image img{
+    height: 300px;
+    width: 300px;
+    margin: 15px 0;
+}
+.page-template-template-sidebar .main,
+.single .main {
+    float: left;
+    width: 66.6666666667%;
+}
+.page-template-template-sidebar .sidebar,
+.single .sidebar{
+    float: left;
+    width: 33.3333333333%;
+}
+.recent-posts-widget-with-thumbnails-2 .rpwwt-post-title ,
+.recent-posts-widget-with-thumbnails .rpwwt-post-title  {
+    background-color: #6A665A;
+}
+.one-third #overlay {
+    background-color: #424139;
+    left: -1px;
+
+}
+.one-third #overlay .entry-title {
+    color: #ffffff;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+

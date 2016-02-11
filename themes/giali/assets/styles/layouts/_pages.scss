@@ -1,0 +1,22 @@
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+.about {
+  color: $brand-primary;
+  margin: 20px;
+  text-align: center;
+}
+
+h4, h5 {
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid $light-gray;
+  line-height: 0.1em;
+  margin: 15px 0 30px;
+  color: $brand-primary;
+}
+h4 span, h5 span, h4 > .patients {
+  background: $white;
+  padding-right: 10px;
+}

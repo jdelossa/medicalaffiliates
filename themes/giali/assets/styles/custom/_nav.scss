@@ -1,0 +1,105 @@
+nav {
+  margin-top: 30px;
+}
+#menu-main-menu {
+  background-color: #f7f7f6;
+  border-top: solid 1px #E7E7E6;
+  border-left: solid 1px #E7E7E6;
+  border-right: solid 1px #E7E7E6;
+  margin-top: 5px;
+  li {
+    border-right: solid 1px #e7e7e6;
+    float: left;
+    text-transform: uppercase;
+
+    .fa-phone:before {
+      color: $brown;
+      font-size: 20px !important;
+      font: normal normal normal 14px/1 FontAwesome;
+      position: absolute;
+      top: 11px;
+      left: -12.5px;
+    }
+
+    a {
+      padding: 11px 65px 10px 65px;
+      &:hover, &:focus, &:active {
+        color: darken($brand-primary, 10%);
+      }
+    }
+  }
+  li:last-child {
+    border-right: none;
+    text-transform: capitalize;
+    float: right;
+    font-weight: 600;
+    font-family: 'PT Sans', sans-serif;
+    a {
+      color: $brown;
+      font-size: 16px;
+      padding: 10px 15px 0 15px;
+      text-align: right;
+      &:hover, &:focus, &:active {
+        color: $brown;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #menu-main-menu {
+    li {
+      a {
+        padding: 10px 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  #menu-main-menu {
+    li {
+      a {
+        padding: 10px 30px;
+      }
+    }
+    li:last-child {
+      a {
+        padding: 10px 15px;
+      }
+    }
+  }
+  .fa-phone:before {
+    top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    margin-top: 40px;
+  }
+  #menu-main-menu {
+    li {
+      width: 25%;
+      a {
+        padding: 10px 0;
+        text-align: center;
+      }
+    }
+    li#menu-item-59 {
+      border-right: none;
+    }
+    li:last-child {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #menu-main-menu {
+    li {
+      font-size: 12px;
+    }
+  }
+}

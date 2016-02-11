@@ -1,0 +1,51 @@
+/*Header*/
+.header-contact, .header-contact a {
+    background-color: #fff;
+    left: 0;
+    right: 0;
+}
+.header-contact li, .header-contact a {
+    color: rgb(78, 116, 132) !important;
+}
+.header-contact a {
+    padding-right: 35px;
+}
+.navbar-nav {
+    width: 100%;
+}
+.header-fixed-top {
+    background-color: #ffffff !important;
+}
+.header-logo {
+    position: relative;
+    left: 0;
+        top: -17px;
+    width: 275px;
+}
+/*Content*/
+.col-centered {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80% !important;
+}
+/*Map*/
+#map {
+    width: 100% !important;
+}
+/*Footer*/
+.footer-logo {
+    margin-left: 60px;
+}
+.footer p, .footer a {
+    color: #ffffff !important;
+}
+.top {
+    display: none;
+    visibility: hidden;
+}
+#home {
+    background-position-y: 60%;
+    behavior: url('http://wuhwebsites.winthrop.org/cipolla_wordpress/backgroundsize.min.htc');
+    -ms-behavior: url('http://wuhwebsites.winthrop.org/cipolla_wordpress/backgroundsize.min.htc');
+}

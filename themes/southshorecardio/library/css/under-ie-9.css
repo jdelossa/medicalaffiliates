@@ -1,0 +1,68 @@
+body {
+    padding-top: 0 !important;
+}
+/*Mobile*/
+.header-contact, .header-contact a{
+    color: #ffffff;
+}
+/*Navbar*/
+.navbar-default, .navbar-fixed-top {
+    background-color: #ffffff;
+    opacity: 0.8;
+}
+.navbar .nav {
+    float: right;
+}
+.title a, .navbar a {
+    color: #545454 !important;
+}
+.back {
+    top: 14px !important;
+}
+/*CTA*/
+.cta-logo{
+    margin: auto;
+}
+.cta-logo, .footer-logo {
+    width: 300px;
+}
+.cta-bg li {
+    width: 48% !important;
+}
+/*Content*/
+.col-centered {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80% !important;
+}
+/*Map*/
+.map2 {
+    display: none !important;
+    visibility: hidden;
+}
+div.email {
+    float: left;
+}
+#map {
+    height: 818px;
+}
+/*Doctor*/
+.one-third {
+    float: left;
+    width: 33%;
+}
+/*Insurance*/
+#insurance-container p {
+    float: none;
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+}
+.img-container {
+    width: 300px;
+}
+#home, #error {
+    behavior: url('http://wuhwebsites.winthrop.org/southshorecardiovascular_wordpress/backgroundsize.min.htc');
+    -ms-behavior: url('http://wuhwebsites.winthrop.org/southshorecardiovascular_wordpress/backgroundsize.min.htc');
+}

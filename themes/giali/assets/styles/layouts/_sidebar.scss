@@ -1,0 +1,176 @@
+/*Widget Code*/
+.rpwwt-widget ul { list-style: outside none none; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
+.rpwwt-widget ul li { overflow: hidden; margin: 0 0 1.5em; }
+.rpwwt-widget ul li img { display: inline; float: left; margin: .3em .75em .75em 0; }
+#rpwwt-recent-posts-widget-with-thumbnails-2 img { width: 85px; height: 85px; }
+
+/* Hide 'Make An Appointment' btn on Contact page*/
+body.contact {
+  aside.sidebar {
+    section.widget_text:first-child {
+      display: none;
+    }
+  }
+}
+
+.blog {
+  aside.sidebar {
+    display: none;
+  }
+}
+aside.sidebar {
+  border-left: solid 1px $light-gray;
+  -webkit-font-smoothing: antialiased;
+  .btn-primary {
+    text-transform: uppercase;
+    padding: 10px;
+    width: 100%;
+  }
+  h3 {
+    color: $brown;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .sci-contact {
+    line-height: 10px;
+  }
+  .widget_sci_info_widget, .widget_sci_info_widget_2 {
+    h3 {
+      color: $light-brown;
+      font-size: 14px;
+    }
+  }
+  .recent-posts-widget-with-thumbnails-2, .recent-posts-widget-with-thumbnails {
+    ul {
+      margin: 0;
+      padding-left: 0;
+      width: 100%;
+      li {
+        float: left;
+        margin: 0;
+        width: 25%;
+      }
+      li img {
+        margin: 0;
+      }
+      li:hover {
+        .rpwwt-post-title {
+          text-decoration: none;
+          visibility: visible;
+        }
+      }
+      .rpwwt-post-title {
+        background: transparentize($brown, 0.3);
+        border-top: solid 1px $brand-primary;
+        color: $white;
+        display: inline-block;
+        font-size: 7px;
+        font-weight: 600;
+        padding: 5px 0;
+        position: relative;
+        bottom: 23px;
+        text-align: center;
+        text-transform: uppercase;
+        visibility: hidden;
+        width: 85px;
+      }
+    }
+  }
+}
+
+@media(max-width: 1200px) and (min-width: 991px){
+  aside.sidebar {
+    .recent-posts-widget-with-thumbnails-2, .recent-posts-widget-with-thumbnails {
+      ul {
+        li img {
+          margin-bottom: 20px;
+          height: 65px !important;
+          width: 65px !important;
+        }
+        .rpwwt-post-title {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 991px) and (min-width: 767px){
+  aside.sidebar {
+    .recent-posts-widget-with-thumbnails-2, .recent-posts-widget-with-thumbnails {
+      ul {
+        li img {
+          margin-bottom: 20px;
+          height: 45px !important;
+          width: 45px !important;
+        }
+        .rpwwt-post-title {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .blog .main {
+    float: left;
+    width: 100%;
+  }
+}
+@media(max-width: 767px){
+  aside.sidebar {
+    .recent-posts-widget-with-thumbnails-2, .recent-posts-widget-with-thumbnails {
+      ul {
+        li {
+          width: 25%;
+        }
+        li img {
+          margin-bottom: 20px;
+          height: auto !important;
+          width: 95% !important;
+        }
+        .rpwwt-post-title {
+          font-size: 9px;
+          bottom: 42px;
+          width: 95%;
+        }
+      }
+    }
+    .widget_sci_info_widget,.widget_sci_info_widget_2 {
+      text-align: center;
+    }
+  }
+}
+
+@media(max-width: 480px){
+  aside.sidebar {
+    .recent-posts-widget-with-thumbnails-2, .recent-posts-widget-with-thumbnails {
+      ul {
+        li {
+          width: 33%;
+        }
+        li img {
+          margin-bottom: 0px;
+        }
+        .rpwwt-post-title {
+          font-size: 7px;
+          bottom: 23px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 320px){
+  aside.sidebar {
+    .recent-posts-widget-with-thumbnails-2, .recent-posts-widget-with-thumbnails {
+      ul {
+        .rpwwt-post-title {
+            font-size: 6px;
+            bottom: 22px;
+        }
+      }
+    }
+  }
+}
+

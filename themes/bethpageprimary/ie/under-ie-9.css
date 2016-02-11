@@ -1,0 +1,45 @@
+body {
+    margin: 60px 0 0 !important;
+}
+/*Mobile*/
+.mobile-action {
+  display: none !important;
+}
+/*Nav*/
+.navbar-fixed-top {
+  background-color: #ffffff;
+}
+.navbar-header {
+  float: left;
+}
+.navbar .nav {
+  float: right !important;
+}
+li.page_item.current_page_item {
+  background: #e0e0e0 !important;
+}
+/*CTA*/
+.cta-logo{
+    margin: auto;
+}
+.cta-logo, .footer-logo {
+    width: 300px;
+}
+/*Footer*/
+.footer-logo {
+    margin-left: 60px;
+}
+.pre-footer {
+    height: 50px;
+}
+.pre-footer p, .pre-footer a {
+	color: #ffffff !important;
+}
+.top {
+    display: none;
+    visibility: hidden;
+}
+#home, #error {
+    behavior: url('http://wuhwebsites.winthrop.org/bethpage_wordpress/backgroundsize.min.htc');
+    -ms-behavior: url('http://wuhwebsites.winthrop.org/bethpage_wordpress/backgroundsize.min.htc');
+}

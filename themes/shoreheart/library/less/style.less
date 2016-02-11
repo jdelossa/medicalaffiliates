@@ -1,0 +1,112 @@
+/*
+Theme Name: Winthrop Medical
+Author: Winthrop Web Team
+Description: The first base theme for Winthrop medical afffiliates.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import "contact";
+@import "doctor";
+@import "footer";
+@import "header";
+@import "hero";
+@import "insurance";
+@import "mobile-header";
+@import "services";
+@import "transitions";
+
+@import "response";
+
+@color-red: #c02d2d;
+@color-light-red: #D24D57;
+@color-blue: #414B55;
+@color-gray: #7c7d80;
+@color-dark-gray: #545454;
+@color-off-white: #eeeeee;
+
+html {
+  height: 100%;
+  position: relative;
+}
+body, #map {
+  position: relative;
+  width: 100%;
+  background-color:@color-off-white;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+p,li,a,address,.doctor-specialty{
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: @color-gray;
+
+}
+a, a:hover {
+  color: @color-red;
+}
+a.title:hover {
+  text-decoration: none !important;
+}
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+/********************* CONTENT STYLES *********************/
+#doctor-wrap, #wrap {
+  background-color: #fff;
+  border: solid 1px #ccc;
+  position: relative;
+  bottom: 30px;
+  padding-bottom: 60px;
+}
+#doctor-wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 110px auto -60px;
+  padding: 0 0 105px;
+}
+.container {
+  h2,h3,h4,h5 {
+    color: @color-dark-gray;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+  }
+}
+.content {
+  padding: 20px;
+  p {
+    line-height: 1.85em;
+  }
+}
+.margin-top {
+  margin-top: 100px;
+}
+.main {
+  text-align: center;
+}
+/********************* SECTION STYLES *********************/
+.line-separator {
+  background-image: url('library/images/separator.png');
+  width: 100%;
+}
+.line-separator-blue {
+  background-image: url('library/images/separator-blue.png');
+  width: 400px;
+  margin: auto !important;
+}
+.separator {
+  display: block;
+  height: 50px;
+  margin: 10px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}

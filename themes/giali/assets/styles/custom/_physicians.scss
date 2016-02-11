@@ -1,0 +1,182 @@
+/**************** Single Doctor Page Only ****************/
+.single {
+  .entry-title {
+    border-bottom: none;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .speciality {
+    position: relative;
+    bottom: 25px;
+  }
+  .health-grades, .vitals {
+    margin-bottom: 15px;
+  }
+  .single-image {
+    border: solid 2px $light-blue;
+    border-radius: 3px;
+    margin-bottom: 30px;
+  }
+  .physician-information {
+    .header {
+      background-color: $light-blue;
+      display: inline-block;
+      font-size: 16px;
+      padding: 5px 10px;
+      width: 100%;
+    }
+    p {
+      padding: 5px 10px;
+      margin-bottom: 5px;
+    }
+    .col-lg-3 {
+      padding-left: 0;
+    }
+
+  }
+}
+
+/**************** All Doctors Page ****************/
+.blog {
+  .one-third {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 33%;
+  }
+
+}
+@media (max-width: 1200px) {
+  /* All Doctors Page */
+  .blog {
+    .one-third {
+      .overlay {
+        width: 280px;
+      }
+      .image {
+        .physician-photo {
+          height: 300px;
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  /* All Doctors Page */
+  .blog {
+    .one-third {
+      float: left;
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 767px){
+  /* All Doctors Page */
+  .blog {
+    .one-third {
+      .overlay {
+        width: 205px;
+        .entry-title {
+          font-size: 12px;
+        }
+      }
+      .image {
+        .physician-photo {
+          height: 225px;
+          width: 225px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 481px) {
+  /* All Doctors Page */
+  .one-third {
+    margin-bottom: 30px;
+    .overlay {
+      background: transparentize($brown, 0.3);
+      border-top: solid 1px $brand-primary;
+      cursor: pointer;
+      height: auto;
+      position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+      width: 305px;
+      margin: auto;
+      .entry-title {
+        color: $white;
+        line-height: 50px;
+        font-size: 16px;
+        padding: 10px;
+        text-transform: uppercase;
+
+        &:hover, &:focus, &:active {
+          text-decoration: none;
+        }
+      }
+    }
+    .image  {
+      .physician-photo {
+        height: 325px;
+        padding: 10px;
+        width: 325px;
+      }
+    }
+  }
+}
+@media (max-width: 480px){
+  /* All Doctors Page */
+  .blog {
+    .one-third {
+      width: 100%;
+      .image {
+        .physician-photo {
+          float: left;
+          height: 75px;
+          margin: 5px;
+          padding: 0;
+          width: 75px;
+        }
+      }
+      .overlay {
+        background: transparent;
+        display: block;
+        height: auto;
+        position: absolute;
+          top: 5px;
+        margin-left: 28%;
+        width: 72%;
+        .entry-title {
+          border: none;
+          color: $brown;
+          float: left;
+          line-height: 75px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px){
+  /* All Doctors Page */
+  .blog {
+    .one-third {
+      width: 100%;
+
+      .overlay {
+        margin-left: 35%;
+        width: 65%;
+        .entry-title {
+          border: none;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,89 @@
+/*
+Theme Name: Winthrop Medical
+Author: Winthrop Web Team
+Description: The first base theme for Winthrop medical affiliates.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import "about.less";
+@import "contact.less";
+@import "doctor.less";
+@import "footer.less";
+@import "header.less";
+@import "jumbotron.less";
+@import "nav.less";
+@import "patient-information.less";
+@import "response.less";
+@import "section.less";
+@import "error404";
+
+
+@winthrop-green: #266067;
+@background-gray: #c2c2c2;
+@winthrop-light-green: #317f88;
+@white: #fff;
+@off-white: #fcfcfc;
+
+
+/********************* HTML ELEMENTS *********************/
+html, body {
+  overflow-x: hidden; 
+}
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  background: url('library/img/sos.png');
+}
+body, #map {
+  width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+}
+p,a,address,ol,ul,td {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75em;
+}
+p {
+  color: darken(@winthrop-green, 25%);
+}
+a, a:hover { color: @winthrop-green; }
+a.title:hover, a.title:active { text-decoration: none !important; }
+ul { padding-left: 0; }
+hr { border-top: 1px solid darken(@white, 5%);}
+
+
+/********************* Pretty Things *********************/
+.line-separator {
+  background-image: url(library/img/separator.png);
+}
+.separator {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-underline {
+  width: 60px;
+  background-color: @winthrop-light-green;
+  height: 2px;
+  margin: 0px auto 15px auto;
+}
+.row-centered {
+  text-align: center;
+}
+.full-width-padding {
+  padding: 0 10px;
+}

@@ -1,0 +1,75 @@
+/*
+Theme Name: Winthrop Medical
+Author: Winthrop Web Team
+Description: The first base theme for Winthrop medical affiliates.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import "jumbotron.less";
+@import "transitions.less";
+@import "nav.less";
+@import "page-styles.less";
+@import "home.less";
+@import "about.less";
+@import "physicians.less";
+@import "insurance.less";
+@import "offices.less";
+@import "footer.less";
+@import "response.less";
+
+/********************* LESS VARIABLES *********************/
+@white: #ffffff;
+@silver: #eeeeee;
+@light-gray: #cccccc;
+@light-blue: #4E7B96;
+@blue: #50819F;
+@gray: #aaa;
+@color-black: #454242;
+/********************* HTML ELEMENTS *********************/
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  background-color: @silver;
+  overflow-x: hidden;
+  padding-top: 117px;
+}
+body {
+  width: 100%;
+}
+h1,h2,h3,h4,h5,h6 {
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: @light-blue;
+}
+p,address,li {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: darken(@blue, 10%);
+}
+section {
+  padding: 10px;
+  text-align: center;
+}
+section p {
+  color: darken(@blue, 10%);
+  line-height: 1.75em;
+}
+a, a:hover {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: darken(@blue, 10%);
+}
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+
+
+

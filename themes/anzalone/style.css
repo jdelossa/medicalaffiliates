@@ -1,0 +1,542 @@
+/*
+Theme Name:         Vincent Anzalone Medical Services
+Theme URI:          https://drvincentanzalone.com
+Description:        A Vincent Anzalone Medical Services Theme
+Version:            1.0
+Author:             Winthrop Web
+Author URI:         https://www.winthrop.org/
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/********************* HTML ELEMENTS *********************/
+html,
+body {
+  overflow-x: hidden;
+}
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  background: url(library/img/background.png);
+  position: relative;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+body,
+#map {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+}
+p,
+a,
+address,
+ol,
+ul,
+td {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.75em;
+  letter-spacing: 0.03em;
+  color: #2b4651;
+}
+section {
+  background-color: #ffffff;
+  border: 1px solid #d1dde2;
+  border-top: 5px solid #2b4651;
+  text-align: center;
+  padding: 25px 30px;
+  margin: 20px 0;
+}
+section h3 {
+  font-size: 22px;
+}
+.contact-header {
+  border-top-color: #71b553;
+}
+.contact-header .header {
+  padding-bottom: 10px !important;
+  color: #71b553 !important;
+  border-bottom-color: #71b553 !important;
+}
+a,
+a:hover {
+  color: #375974;
+  text-decoration: none;
+}
+a.title:hover {
+  text-decoration: none !important;
+}
+ul {
+  padding-left: 0;
+}
+hr {
+  border-color: #2b4651;
+}
+.col-centered {
+  float: none;
+  margin: auto;
+}
+.line-break {
+  background-color: #375974;
+  height: 2.5px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+.line-separator {
+  background-image: url(library/img/winthrop-separator.png);
+}
+.separator {
+  display: block;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/********************* Header *********************/
+.header-static-top {
+  border-bottom: #192930 solid 5px;
+  position: static;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1060;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+  height: 125px;
+}
+.header-static-top a.title {
+  float: left;
+  color: #2b4651;
+  position: relative;
+  top: 5px;
+}
+.header-static-top a.title:hover {
+  text-decoration: none;
+  color: #3d6372;
+}
+.header-static-top .header-logo {
+  float: right;
+}
+/********************* Navbar *********************/
+.navbar-static-top {
+  display: block;
+  bottom: 49px;
+  z-index: 1060;
+}
+.navbar-static-top .navbar {
+  min-height: 40px !important;
+  margin-bottom: 0 !important;
+}
+.navbar-static-top #navbar {
+  display: block;
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  margin-bottom: 0;
+}
+.navbar-static-top #navbar li {
+  float: left;
+  width: 25%;
+  height: 100%;
+  padding-top: 12px;
+  background-color: #375974;
+  cursor: pointer;
+  border-right: solid 1px #0d141b;
+}
+.navbar-static-top #navbar li:hover {
+  background-color: #1e2d3d;
+}
+.navbar-static-top #navbar li.contact-us {
+  background-color: #71b553;
+  border-right: none;
+}
+.navbar-static-top #navbar li.contact-us:hover {
+  background-color: #5a9540;
+}
+.navbar-static-top #navbar a {
+  color: #ffffff;
+  margin: 0 5px;
+  font-weight: 600;
+  text-decoration: none;
+}
+/********************* Wrapper *********************/
+#wrapper {
+  width: 100%;
+  position: relative;
+  bottom: 81px;
+}
+#wrapper .jumbotron-background {
+  height: 250px;
+  position: absolute;
+  width: 100%;
+  background-color: #2b4651;
+  z-index: -1;
+}
+#wrapper .jumbotron {
+  background: url(library/img/AnzaloneHero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  margin: 10px auto;
+  z-index: 1060;
+}
+#wrapper .header {
+  border-bottom: solid 1px #375974;
+  color: #375974;
+  padding: 0 0 15px 0;
+}
+#wrapper .header .specialty {
+  padding-top: 10px;
+  display: block;
+  font-size: 14px;
+}
+#wrapper .sub-header {
+  display: inline-block;
+  border-bottom: solid 1px #71b553;
+  color: #71b553;
+  padding-bottom: 5px;
+}
+#wrapper .content {
+  padding: 20px;
+}
+#wrapper .sub-section {
+  background-color: #ffffff;
+  border: 1px solid #d1dde2;
+  border-top: 3px solid #2b4651;
+  text-align: center;
+  padding: 5px 30px;
+  margin: 15px 10px;
+}
+#wrapper .sub-section .header {
+  padding-top: 10px;
+  text-align: center;
+}
+#wrapper .sub-section .img-circle {
+  margin: 10px;
+  max-width: 165px;
+  max-height: 165px;
+  width: 165px;
+  height: 165px;
+  border: solid 1px #c7c7c7;
+}
+#wrapper .sub-section .btn {
+  margin-top: 20px;
+  background-color: #86c06c;
+  border: #71b553;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 7px 20px;
+}
+#wrapper .sub-section .btn:hover {
+  background-color: #6eb34f;
+}
+#wrapper .sub-section .doctor-name {
+  display: inline-block;
+  margin: 2.5px 0;
+  float: left;
+}
+#wrapper .sub-section .doctor-specialty {
+  font-weight: bold;
+  position: relative;
+  top: 3px;
+  text-align: right;
+}
+#wrapper .sub-section .doctor-details {
+  padding-top: 45px;
+}
+#wrapper .sub-section .doctor-details p {
+  font-size: 12px;
+}
+#wrapper .sub-section .fa-phone {
+  font-size: 30px;
+  color: #2b4651;
+  margin: 8px 0;
+}
+#wrapper .sub-section .fa-phone:hover {
+  color: #375974;
+}
+#wrapper .sub-section .insurances {
+  display: inline-block;
+  background-image: url(library/img/insurances.png);
+  margin: 15px;
+  height: 50px;
+  width: 129px;
+}
+#wrapper .sub-section .aetna {
+  background-position: 0 0;
+}
+#wrapper .sub-section .bluecross {
+  background-position: -840px 0;
+}
+#wrapper .sub-section .cigna {
+  background-position: -280px 0;
+}
+#wrapper .sub-section .emblemHealth {
+  background-position: -840px -50px;
+}
+#wrapper .sub-section .ghi {
+  background-position: -1400px -145px;
+}
+#wrapper .sub-section .healthNet {
+  background-position: -1404px -100px;
+}
+#wrapper .sub-section .hip {
+  background-position: 0 -100px;
+}
+#wrapper .sub-section .magnaCare {
+  background-position: -140px -50px;
+}
+#wrapper .sub-section .medicare {
+  background-position: -560px -50px;
+}
+#wrapper .sub-section .multiPlan {
+  background-position: -280px -50px;
+}
+#wrapper .sub-section .oxford {
+  background-position: -1400px -50px;
+}
+#wrapper .sub-section .vytra {
+  background-position: -140px -100px;
+}
+#wrapper .sub-section .form li {
+  font-size: 12px;
+  text-align: left;
+  border-bottom: solid 1px #cccccc;
+  list-style-type: none;
+  padding: 6px 0;
+}
+#wrapper .sub-section .form li:before {
+  content: "\f105";
+  font-family: FontAwesome;
+  color: #71b553;
+  padding-right: 4px;
+  font-size: 11px;
+}
+#wrapper #map {
+  width: 100%;
+  height: 250px;
+  margin-bottom: -85px;
+  position: relative;
+  bottom: 70px;
+  z-index: -1;
+}
+#single-doctor {
+  margin-top: 65px;
+}
+#single-doctor .header {
+  text-align: center;
+  border-bottom: none;
+}
+#single-doctor .img-container img {
+  max-width: 100%;
+  border-radius: 100%;
+  border: solid 1px #c7c7c7;
+  height: 225px;
+}
+#single-doctor .btn {
+  font-size: 12px;
+  text-align: center;
+  background-color: #86c06c;
+  border: #71b553;
+}
+#single-doctor .profile {
+  text-align: left;
+}
+#single-doctor .profile b {
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: #cccccc;
+  color: #2b4651;
+  padding: 2px 5px;
+  width: 100%;
+  display: inline-block;
+}
+#single-doctor #padding-top {
+  padding-top: 10px;
+}
+footer .footer {
+  position: relative;
+  bottom: 50px;
+  width: 100%;
+}
+footer .footer h4,
+footer .footer p {
+  color: #375974;
+  text-align: center;
+  margin-top: 25px;
+}
+footer .footer p {
+  font-size: 12px;
+}
+@media (max-width: 991px) {
+  .header-static-top a.title {
+    padding-left: 10px;
+  }
+  .header-static-top .header-logo {
+    padding-right: 10px;
+  }
+  #wrapper .content {
+    padding: 10px;
+  }
+  #single-doctor .profile {
+    margin-top: 15px;
+  }
+  #single-doctor .btn {
+    margin: 0 0 15px 0;
+  }
+}
+@media (max-width: 979px) {
+  #wrapper .jumbotron-background {
+    height: 0;
+  }
+}
+@media (min-width: 924px) {
+  #navbar li a.about {
+    padding: 17px 77px;
+  }
+  #navbar li a.medical-staff {
+    padding: 17px 63px;
+  }
+  #navbar li a.patient-information {
+    padding: 17px 80px;
+  }
+  #navbar li a.contact {
+    padding: 17px 70px;
+  }
+}
+@media (max-width: 840px) {
+  #wrapper .sub-section .img-circle {
+    max-width: 145px;
+    max-height: 145px;
+  }
+}
+@media (max-width: 767px) {
+  .mobile-contact {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 1px;
+    height: 35px;
+    z-index: 1080;
+    background-color: #375974;
+  }
+  .mobile-contact li {
+    list-style-type: none;
+    float: left;
+    text-align: center;
+    width: 48%;
+    color: #ffffff;
+    border: #2b4651 soild 1px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    margin: 0.6% 1%;
+  }
+  .mobile-contact li a {
+    color: #ffffff;
+    font-size: 9px;
+    position: relative;
+    bottom: 2px;
+  }
+  .header-static-top {
+    height: 160px;
+    margin-top: 30px;
+  }
+  .header-static-top a.title {
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .header-static-top a.title h3 {
+    font-size: 20px;
+  }
+  .header-static-top .header-logo {
+    padding-right: 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 10px;
+  }
+  .navbar-static-top {
+    border-top: solid 3px #192930;
+  }
+  .navbar-static-top #navbar li {
+    font-size: 10px;
+  }
+  #wrapper h3.header {
+    font-size: 20px;
+  }
+  #wrapper .sub-section {
+    margin: 15px auto;
+    width: 400px;
+  }
+  #wrapper .sub-section .btn {
+    margin-bottom: 15px;
+  }
+  #wrapper .sub-section .doctor-details {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .mobile-contact {
+    padding-top: 3px;
+  }
+  .header-static-top a.title h3 {
+    font-size: 18px;
+  }
+  .header-static-top .header-logo img {
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
+  #wrapper .jumbotron {
+    height: 200px;
+  }
+  #wrapper .sub-section {
+    width: 350px;
+  }
+  #wrapper .sub-section .insurance li {
+    font-size: 7px;
+    margin: 10px 0px;
+    width: 105px;
+  }
+}
+@media (max-width: 380px) {
+  .navbar-static-top #navbar li {
+    font-size: 10px;
+  }
+  .navbar-static-top #navbar a {
+    margin: 0 1px;
+  }
+  #wrapper .sub-section {
+    width: 300px;
+  }
+  #wrapper .sub-section .doctor-name,
+  #wrapper .sub-section .doctor-specialty {
+    display: block;
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+  #wrapper .sub-section .doctor-specialty {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,71 @@
+/*Mobile*/
+.mobile-action {
+  display: none !important;
+}
+/*Nav*/
+.navbar-fixed-top {
+    background-color: transparent;
+}
+.navbar-header {
+  float: left;
+  margin-left: 20px !important;
+  position: relative;
+    bottom: 5px;
+}
+.navbar .nav {
+  float: right !important;
+}
+.navbar-toggle, .top {
+    display: none;
+    visibility: hidden;
+}
+.nav li {
+    margin: 0 5px !important;
+}
+
+.navbar-default {
+    border-bottom-color: #5a5a5a;
+}
+.collapse {
+    display: block !important;
+}
+.back {
+    top: 14px !important;
+}
+/*CTA*/
+.cta-logo{
+    margin: auto;
+}
+.cta-logo, .footer-logo {
+    width: 300px;
+}
+.cta-bg li {
+    width: 48% !important;
+}
+/*Footer*/
+.footer-logo {
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.footer p{
+	color: #ffffff !important;
+}
+/*Doctor*/
+.one-third {
+    float: left;
+    width: 33%;
+}
+/*Insurance*/
+#insurance-container p {
+    float: none;
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+}
+.img-container {
+    width: 300px;
+}
+.jumbotron {
+    behavior: url('http://wuhwebsites.winthrop.org/shoreheart_wordpress/backgroundsize.min.htc');
+    -ms-behavior: url('http://wuhwebsites.winthrop.org/shoreheart_wordpress/backgroundsize.min.htc');
+}

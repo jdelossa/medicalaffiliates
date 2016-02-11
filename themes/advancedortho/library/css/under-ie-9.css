@@ -1,0 +1,76 @@
+body {
+    padding-top: 0px !important;
+}
+#home, #error {
+    behavior: url('http://wuhwebsites.winthrop.org/advanced_ortho_wordpress/backgroundsize.min.htc');
+    -ms-behavior: url('http://wuhwebsites.winthrop.org/advanced_ortho_wordpress/backgroundsize.min.htc');
+}
+/*Mobile*/
+.alert-warning {
+    position: fixed;
+        left: 0;
+        right: 0;
+    z-index: 2000;
+}
+.header-contact, .header-contact a {
+    color: #ffffff !important;
+}
+/*Nav*/
+.header-contact {
+    top: 52px;
+}
+.navbar-fixed-top {
+    top: 82px;
+}
+.navbar li {
+    margin-left: 10px;
+}
+.navbar li > a:focus, .navbar li > a:hover, #navbar li.active {
+    background: none repeat scroll 0 0 #2E738D !important;
+    box-shadow: 0 0 9px 1px #2E738D inset;
+    -webkit-box-shadow: 0 0 9px 1px #2E738D inset;
+}
+.contact-button {
+    float: right;
+}
+/*CTA*/
+.cta {
+    background-color: #ffffff;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    /* IE 5-7 */
+    filter: alpha(opacity=80);
+}
+.cta-logo {
+    margin: auto;
+}
+.cta-logo, .footer-logo {
+    width: 275px;
+}
+.footer-logo {
+    position: relative;
+        top: 8px;
+}
+/*Content*/
+.col-centered {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80% !important;
+}
+/*Map*/
+#rockville-map, #garden-map {
+    height: 320px !important;
+    width: 350px !important;
+}
+/*Footer*/
+.footer-logo {
+    margin-left: 60px;
+}
+.footer p, .footer a {
+    color: #ffffff !important;
+}
+.top {
+    display: none;
+    visibility: hidden;
+}

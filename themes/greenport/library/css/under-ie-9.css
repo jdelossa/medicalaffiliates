@@ -1,0 +1,7 @@
+#map {
+    max-width: 100%
+}
+.jumbotron {
+    behavior: url('http://wuhwebsites.winthrop.org/kaplan_wordpress/backgroundsize.min.htc');
+    -ms-behavior: url('http://wuhwebsites.winthrop.org/kaplan_wordpress/backgroundsize.min.htc');
+}

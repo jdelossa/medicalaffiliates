@@ -1,0 +1,49 @@
+.cta-container {
+    display: block;
+    left: 0;
+    right: 0;
+}
+.cta li {
+    float: left;
+    padding: 10px 0;
+    width: 50%;
+}
+.row-fluid .offset1 {
+    margin-left: 0 !important;
+}
+.insurances {
+    display: inline-block;
+    float: left;
+}
+#insurances p {
+    margin-top: 20px;
+    width: 100%;
+}
+.nav, .navbar-collapse {
+    display: inline-block;
+    float: left;
+    width: 100%;
+}
+.nav li {
+    float: left !important;
+}
+.footer .col-sm-6 {
+    width: 100%;
+}
+.footer-logo {
+    float: none !important;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 70px;
+}
+.footer p{
+   display: none;
+    visibility: hidden;
+}
+.single {
+    padding-top: 100px !important;
+}
+#doctor-wrap {
+    margin: 110px auto 0px !important;
+}

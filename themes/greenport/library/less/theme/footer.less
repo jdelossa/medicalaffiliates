@@ -1,0 +1,52 @@
+/********************* Footer *********************/
+footer {
+  h4 {
+    color: @white;
+  }
+  p,a {
+    color: @white;
+  }
+  p,a {
+    font-size: 14px;
+    letter-spacing: 0.01em;
+  }
+  .affiliation {
+    font-size: 10px !important;
+  }
+}
+.ribbon {
+  background-color: lighten(@winthrop-green, 5%);
+  padding: 1em;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  position: relative;
+
+  &:after, &:before {
+    content:"";
+    display: block;
+    position: absolute;
+    top: -10px;
+    border: 10px solid @winthrop-green;
+    border-top-width: 0;
+  }
+  &:after {
+    right: 0;
+    border-right-color: transparent;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 20px;
+  }
+  &:before {
+    left: 0;
+    border-left-color: transparent;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 20px;
+  }
+}
+.single .ribbon{
+  margin-left: -35px;
+  margin-right: -5px;
+}

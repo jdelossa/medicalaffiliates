@@ -1,0 +1,214 @@
+
+@media (min-width: 1200px){
+  .container {
+    width: 970px;
+  }
+}
+@media (max-width: 991px){
+  .content {
+    margin: 0 20px;
+  }
+  section, .img-single {
+    text-align: center;
+  }
+  .img-single {
+    width: 300px;
+    height: auto;
+    margin: auto;
+  }
+  .profile {
+    margin-bottom: 30px;
+  }
+  .forms {
+    margin: 15px 0;
+  }
+  .insurance {
+    margin: 10px auto;
+    display: inline-block;
+    li {
+      width: 125px;
+    }
+  }
+  .doctor-card {
+    .btn {
+      width: 50%;
+    }
+  }
+}
+@media (max-width: 767px){
+  body {
+    padding-top: 90px;
+  }
+  .mobile-contact {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 1px;
+    height: 38px;
+    z-index: 1080;
+    background-color: @winthrop-green;
+    li {
+      list-style-type: none;
+      float: left;
+      text-align: center;
+      width: 48%;
+      color: @white;
+      border: @winthrop-light-green soild 1px;
+      background-color: rgba(0,0,0,0.4);
+      border-radius: 5px;
+      margin: 0.6% 1%;
+      a {
+        color: @white;
+        font-size: 10px;
+        position: relative;
+        bottom: 2px;
+
+      }
+    }
+  }
+  .header-fixed-top {
+    top: 35px;
+  }
+  .navbar-static-top {
+    #navbar {
+      li {
+        width: 33%;
+      }
+      a {
+        font-size: 13px;
+        margin: 0;
+      }
+    }
+  }
+  .jumbotron h2 {
+    font-size: 24px;
+  }
+  #about {
+    h2 {
+      font-size: 21px;
+    }
+  }
+  .well {
+    right: 0;
+  }
+  .insurance li {
+    font-size: 11px;
+    margin: 5px;
+    width: 145px;
+  }
+  footer {
+    p, h4 {
+      text-align: center;
+    }
+  }
+  .single .ribbon{
+    margin-right: -35px;
+  }
+}
+@media (max-width: 570px){
+  body {
+    padding-top: 130px;
+  }
+  section {
+    padding: 2% 7%
+  }
+  p,a,address,ol,ul,td {
+    font-size: 14px;
+  }
+  .header-fixed-top {
+    height: 100px;
+    top: 30px;
+    a.title h3 {
+      font-size: 22px;
+    }
+    a.title, .header-logo {
+      width: 100%;
+      text-align: center;
+    }
+    .header-logo {
+      position: relative;
+      bottom: 25px;
+    }
+  }
+}
+@media (max-width: 480px){
+  h2 {
+    font-size: 19px !important;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 11px;
+  }
+  .mobile-contact {
+    padding-top: 3px;
+  }
+  .col-md-6 {
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+  }
+  .header-logo img {
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
+  .navbar-static-top {
+    #navbar {
+      position: relative;
+      top: 2px;
+      li, a {
+        font-size: 12px;
+        width: 33%;
+      }
+      li.about, li.contact {
+        width: 30%
+      }
+      li.patient-information {
+        width: 40%;
+      }
+    }
+  }
+  .doctor-card {
+    .header-underline {
+      margin: auto;
+    }
+    .doctor-container img {
+      width: 200px;
+    }
+    .btn {
+      width: 80%;
+    }
+  }
+  .img-container {
+    margin-top: 10px;
+    max-width: 175px;
+    width: 175px;
+    max-height: 150px;
+    height: 150px;
+  }
+  .img-single {
+    max-width: 200px;
+    width: 200px;
+    max-height: 200px;
+    height: 200px;
+    margin: auto;
+  }
+}
+@media(max-width: 364px){
+  .navbar-static-top{
+    #navbar {
+      li {
+        line-height: 48px;
+        top: -4px;
+      }
+      .patient-information {
+        line-height: 49px;
+        top: -5px;
+      }
+    }
+  }
+}

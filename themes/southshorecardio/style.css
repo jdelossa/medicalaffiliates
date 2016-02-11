@@ -1,0 +1,923 @@
+/*
+Theme Name:         South Shore Cardiovascular Medicine
+Theme URI:          https://southshorecardiovascularmedicine.com
+Description:        A South Shore Cardiovascular Medicine Theme
+Version:            1.0
+Author:             Winthrop Web
+Author URI:         https://www.winthrop.org/
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+.email {
+  cursor: pointer;
+}
+.modal-title {
+  color: #d5535b;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+.modal-content .separator {
+  margin: 10px 0;
+}
+form {
+  text-align: center;
+}
+.wpcf7 textarea,
+.wpcf7 .wpcf7-text {
+  margin: auto auto;
+  width: 80%;
+  height: 100px;
+}
+.wpcf7 .wpcf7-response-output {
+  padding-top: 20px;
+  width: 85%;
+  margin: auto auto;
+}
+.wpcf7 .wpcf7-submit {
+  border: 0px;
+  background-color: transparent;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-family: 'Lato' sans-serif;
+}
+span.wpcf7-not-valid-tip {
+  color: #A94443 !important;
+}
+.wpcf7 .wpcf7-response-output {
+  color: #A94443;
+  font-family: 'Source Sans Pro', sans-serif;
+  border: 0px !important;
+}
+.wpcf7 input[type="radio"] {
+  margin: -3px 0 0;
+}
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"] {
+  height: 35px;
+}
+.wpcf7 .btn-large {
+  padding: 5px 70px;
+}
+.wpcf7 .btn {
+  background-color: #c13d49;
+  background-image: none;
+  text-shadow: none;
+}
+.wpcf7 .btn:hover {
+  background-color: #c13d49;
+  opacity: 0.9;
+  transition: 0.2;
+}
+span.wpcf7-list-item {
+  margin-right: 0em;
+}
+.close {
+  font-size: 30px;
+}
+.section-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.section-header h3 {
+  color: #545454;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 0.025em;
+  padding-bottom: 10px;
+  display: inline-block;
+  border-bottom: solid 2px #545454;
+  margin-bottom: 0px;
+  text-shadow: #eee 0.5px 0.5px 0.2px;
+}
+section h3,
+section h4,
+section h5 {
+  color: #d5535b;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+#about,
+#services {
+  padding: 25px 0;
+}
+.content p {
+  line-height: 1.85em;
+}
+.content {
+  padding: 20px;
+}
+.margin-top {
+  margin-top: 80px;
+}
+.main {
+  text-align: center;
+}
+.col-centered {
+  float: none;
+  margin: auto;
+}
+.custom-row {
+  width: 767px;
+  margin: 20px auto;
+}
+.one-third {
+  width: 33%;
+  float: left;
+}
+.line-separator {
+  background-image: url(library/img/separator-winthrop.png);
+}
+.separator {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.doc-header {
+  background-color: #eeeeee;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.doc-header h5 {
+  color: #c02d2d;
+}
+.doctor-card {
+  text-align: center;
+  margin: 10px;
+  padding-bottom: 20px;
+}
+.doctor-card img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  position: relative;
+}
+.doc-title {
+  color: #545454;
+}
+.img-container img {
+  width: 100%;
+}
+.health-grades .btn,
+.vitals .btn {
+  margin: auto auto;
+  text-align: center;
+}
+.insurances {
+  margin-bottom: 50px;
+}
+.insurance {
+  background-image: url('library/img/insurances.png');
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  height: 50px;
+  width: 135px;
+}
+.aetna { background-position: 0 0; }
+.affinity { background-position: -283px -345px; }
+.bluecross { background-position: -840px 0; }
+.choicecare { background-position: -421px -452px; }
+.cigna { background-position: -286px 0; }
+.coventry { background-position: -702px -98px; }
+.fidelis { background-position: -564px -98px; }
+.ghi { background-position: -421px -395px; }
+.healthnet { background-position: -422px -350px; }
+.hip { background-position: 0px -97px; }
+.humana { background-position: -419px 0; }
+.magnacare { background-position: -145px -47px; }
+.medicaid { background-position: -703px -47px; }
+.medicare { background-position: -568px -47px; }
+.oxford { background-position: -426px -47px; }
+.unhc { background-position: -703px -7px; }
+.single .col-md-8 b {
+  text-transform: uppercase;
+  font-size: 14px;
+  background-color: #eeeeee;
+  color: #545454;
+  padding: 1px 5px;
+  width: 100%;
+  display: inline-block;
+}
+.footer {
+  margin-bottom: 15px;
+}
+.footer p {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 12px 0;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+.footer-logo {
+  padding: 7px 0;
+  opacity: 0.8;
+  float: left;
+}
+.footer-logo img {
+  max-width: 100%;
+  height: auto !important;
+  right: 70px;
+  position: relative;
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -o-transform: scale(0.7);
+}
+.header-contact {
+  height: 30px;
+  background-color: #d5535b;
+  position: fixed;
+  z-index: 1060;
+  width: 100%;
+  -webkit-animation: fadein 0.7s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.7s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 0.7s;
+  /* Internet Explorer */
+  -o-animation: fadein 0.7s;
+  /* Opera < 12.1 */
+  animation: fadein 0.7s;
+}
+.header-contact ul {
+  padding-left: 0 !important;
+  margin-bottom: 0;
+}
+.header-contact li {
+  display: inline-block;
+  margin-top: 2px;
+}
+.header-contact,
+.header-contact a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  padding: 0;
+  top: 0;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.header-contact a:hover {
+  color: #ffffff;
+}
+.hero-unit {
+  padding: 0;
+  border-radius: 0;
+}
+#home,
+#error {
+  background-image: url('library/img/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #aaa;
+  border-radius: 0;
+  height: 525px;
+  margin: 0 0 30px 0;
+  padding: 0;
+  position: relative;
+  border-bottom: solid 1px #c02d2d;
+  top: 30px;
+}
+.cta-container {
+  color: #ffffff;
+  position: absolute;
+  top: 140px;
+  z-index: 999;
+  padding: 15px;
+  left: 0;
+  right: 0;
+  -webkit-animation: fadein 1s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 1s;
+  /* Internet Explorer */
+  -o-animation: fadein 1s;
+  /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+.cta-container h2 {
+  font-weight: 500;
+  font-size: 32px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-shadow: #545454 1px 1px 1px;
+  color: #fff;
+  border-bottom: none;
+  text-transform: capitalize;
+}
+.cta {
+  position: relative;
+  text-align: center;
+}
+.cta ul {
+  margin: 80px 0 0 0;
+  padding: 0;
+}
+.cta li {
+  display: block;
+  margin-right: 10px;
+  bottom: 10px;
+  position: relative;
+}
+.cta a {
+  padding: 15px 50px;
+  color: #fff!important;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  border-radius: 25px;
+  background: #c13d49;
+  box-shadow: #666 2px 2px 10px;
+  letter-spacing: 1px;
+}
+.cta a:hover {
+  text-decoration: none;
+  background-color: #852a32;
+  transition: all 0.3s ease 0s;
+}
+.cta-bg {
+  padding: 5px 0 0 0;
+  margin: 75px;
+}
+.cta-logo {
+  text-align: center;
+  position: relative;
+  top: 450px;
+  opacity: 0.7;
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -o-transform: scale(0.7);
+}
+.cta-logo img {
+  max-width: 100%;
+}
+.navbar-fixed-top {
+  top: 30px;
+  background-color: rgba(0, 0, 0, 0.11);
+  -webkit-animation: fadein 0.7s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.7s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 0.7s;
+  /* Internet Explorer */
+  -o-animation: fadein 0.7s;
+  /* Opera < 12.1 */
+  animation: fadein 0.7s;
+}
+.single .navbar-fixed-top {
+  background-color: #f7f7f7 !important;
+  box-shadow: #7c7d80 0px 0px 1px;
+}
+.navbar-default {
+  border-color: transparent;
+}
+.navbar {
+  margin-bottom: 0 !important;
+}
+.navbar-header {
+  margin: 12px 0;
+}
+.navbar .title {
+  color: #ffffff;
+  font-size: 24px;
+}
+.nav {
+  float: right;
+  position: relative;
+  top: 7px;
+}
+.nav li {
+  display: inline-block;
+  float: none !important;
+}
+.nav li > a:focus,
+.nav li > a:hover,
+.active {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.11) !important;
+  box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.11) inset;
+  -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.11) inset;
+  border-radius: 25px;
+}
+.nav > li > a,
+.back > li > a {
+  padding: 5px 15px 5px !important;
+  text-shadow: none !important;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+#contact-button a {
+  border-radius: 25px;
+  color: #ffffff !important;
+  background-color: #d5535b;
+}
+#contact-button a:hover,
+li#contact-button.active a {
+  background-color: rgba(193, 61, 73, 0.9) !important;
+}
+/* Single Post (Doctor Profile  Needs different colored text) */
+.single.single-post .title {
+  color: #545454 !important;
+}
+.single.single-post li.about,
+.single.single-post li.offices,
+.single.single-post li.services,
+.page-id-2 ul.back,
+.error404 ul.back {
+  display: none;
+  visibility: hidden;
+}
+.single.single-post .nav > li > a,
+.back > li > a {
+  color: #545454 !important;
+}
+/* Single Post Page has back button */
+.back {
+  position: relative;
+  top: 13px;
+  float: left;
+  left: 375px;
+}
+ul.back {
+  padding-left: 0;
+}
+#offices {
+  background-color: #c13d49;
+  display: flex;
+}
+#offices p,
+#offices a,
+#offices h2,
+#offices h4 {
+  color: #ffffff;
+  font-weight: 300;
+}
+#offices h2,
+#offices h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 0.025em;
+  padding-bottom: 10px;
+  display: inline-block;
+  border-bottom: solid 2px #ffffff;
+  margin-bottom: 0px;
+  text-shadow: #852a32 0.5px 0.5px 0.2px;
+}
+.sidebar {
+  width: 40%;
+  float: left;
+  background-color: #d5535b;
+}
+.office1,
+.office2 {
+  padding: 0 50px;
+}
+.info p {
+  margin-top: 15px;
+}
+.info h4 {
+  font-size: 19px;
+}
+.info .fa {
+  font-size: 1.5em;
+  position: relative;
+  top: 4px;
+}
+.office-btn {
+  width: 100%;
+  display: block;
+}
+.office-btn div {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 10px 0px;
+  position: relative;
+  text-align: center;
+  width: 49%;
+}
+.office-btn a {
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #fff!important;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  position: relative;
+  border-radius: 25px;
+  bottom: 5px;
+  border: 1px solid #ffffff;
+  opacity: 0.7;
+}
+.office-btn a:hover {
+  opacity: 1;
+}
+.map {
+  width: 60%;
+  display: inline-block;
+  float: right;
+}
+#map {
+  height: 816px;
+  margin-bottom: -5px;
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+  .health-grades .btn,
+  .vitals .btn {
+    width: 100%;
+  }
+  .btn-lg {
+    font-size: 16px;
+  }
+  .back {
+    left: 175px;
+  }
+}
+@media (min-width: 1200px) {
+  .health-grades .btn,
+  .vitals .btn {
+    width: 95%;
+  }
+}
+@media (max-width: 992px) {
+  .health-grades .btn,
+  .vitals .btn {
+    width: inherit;
+  }
+  .img-container img {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  div.map2 {
+    display: none;
+    visibility: hidden;
+  }
+  .office-btn {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .navbar .title {
+    font-size: 20px;
+  }
+  .cta-container h2 {
+    font-size: 34px;
+  }
+  .map {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    margin-top: 0;
+    display: block;
+  }
+  .sidebar {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+  #offices {
+    text-align: center;
+  }
+  div.map1 {
+    display: none;
+    visibility: hidden;
+  }
+  .services .block {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .single.single-post {
+    text-align: center;
+  }
+  .back {
+    left: 100px;
+  }
+  .insurance {
+    margin-bottom: 0;
+  }
+  .nav > li > a,
+  .back > li > a {
+    font-size: 10px;
+  }
+}
+@media (max-width: 991px) and (min-width: 767px) {
+  .col-md-6 {
+    width: 49%;
+    display: inline-block;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-fixed-top .container {
+    width: auto !important;
+  }
+  .cta-container h2 {
+    font-size: 26px;
+  }
+  .cta a {
+    padding: 15px 30px;
+  }
+  .page-id-2 .nav,
+  .error404 .nav {
+    float: none;
+    clear: both;
+  }
+  .nav {
+    text-align: center;
+  }
+  .nav > li > a {
+    font-size: 14px;
+    padding: 5px 30px 5px !important;
+  }
+  .navbar-header {
+    text-align: center;
+  }
+  .navbar .title {
+    float: none;
+  }
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+  span.wpcf7-list-item {
+    margin-right: 1em;
+  }
+  ul.cta-info {
+    text-align: center;
+    width: 100%;
+  }
+  .custom-row {
+    width: 100%;
+    margin: auto;
+  }
+  .one-third {
+    width: 100%;
+    float: left;
+  }
+  .margin-top {
+    margin-top: 120px;
+  }
+  footer,
+  .footer-logo {
+    text-align: center;
+    clear: both;
+    float: none;
+  }
+  .footer-logo img {
+    right: 0;
+  }
+  .pre-footer {
+    height: 50px;
+  }
+  .pre-footer p {
+    margin: 0;
+    padding-top: 10px;
+  }
+  .footer p {
+    margin: 5px 0 0 0;
+    bottom: 10px;
+    position: relative;
+    text-align: center;
+    font-size: 10px;
+  }
+  .back {
+    top: 20px;
+    left: 0px;
+  }
+}
+@media (min-width: 767px) {
+  .services .col-md-4 {
+    width: 33.33333333333333%;
+    float: left;
+  }
+}
+@media (max-width: 615px) {
+  .cta-info {
+    height: 40px;
+  }
+  .cta-info li {
+    position: relative;
+    top: 5px;
+    font-size: 11px;
+    margin: 0;
+  }
+  .cta-info li a {
+    font-size: 11px;
+  }
+}
+@media (max-width: 597px) {
+  .nav > li > a {
+    font-size: 13px;
+    padding: 5px 20px 5px !important;
+  }
+}
+@media (max-width: 480px) {
+  #home,
+  #error {
+    height: 360px;
+  }
+  #about,
+  #services {
+    margin: 10px;
+  }
+  .cta-container {
+    top: 0;
+  }
+  .error404 .cta-container {
+    top: 80px;
+  }
+  .header-contact,
+  .header-contact a {
+    font-size: 12px;
+  }
+  .header a {
+    text-align: center !important;
+  }
+  h2 {
+    font-size: 20px !important;
+  }
+  h3 {
+    font-size: 18px !important;
+  }
+  p,
+  a {
+    font-size: 12px;
+  }
+  .cta {
+    display: none;
+  }
+  .error404 .cta {
+    display: block;
+  }
+  span.wpcf7-list-item {
+    margin-right: 0.5em;
+  }
+  .services .fa {
+    font-size: 2.5em;
+  }
+  .content {
+    padding: 10px;
+  }
+  .cta-logo {
+    top: 300px;
+  }
+  .cta-logo {
+    transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -o-transform: scale(0.7);
+  }
+  .nav > li > a,
+  .back > li > a {
+    padding: 5px 8px !important;
+    font-size: 11px;
+  }
+  .cta-info li,
+  .cta-info li a {
+    font-size: 9px;
+  }
+  .nav li > a:focus,
+  .nav li > a:hover,
+  .active,
+  #contact-button a {
+    border-radius: 10px;
+  }
+  .pre-footer p {
+    padding-top: 11px;
+  }
+}
+@media (max-width: 400px) {
+  .nav {
+    top: 0px;
+  }
+  .navbar {
+    min-height: 40px;
+  }
+  .cta-container h2 {
+    font-size: 28px;
+  }
+  section h2 {
+    font-size: 24px;
+  }
+  .content {
+    padding: 20px 15px;
+  }
+  .img-container img {
+    width: 100%;
+  }
+  .back {
+    top: 8px;
+    left: 0px;
+  }
+  .header-contact,
+  .header-contact a {
+    font-size: 11px;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+html {
+  min-height: 100%;
+  position: relative;
+}
+body,
+#map {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+p,
+a,
+address,
+.doctor-specialty {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7c7d80;
+}
+a,
+a:hover {
+  color: #c02d2d;
+}
+a.title:hover {
+  text-decoration: none !important;
+}
+ul {
+  list-style: none;
+}
+.modal {
+  padding-top: 30px;
+}

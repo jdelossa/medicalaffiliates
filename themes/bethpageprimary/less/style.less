@@ -1,0 +1,99 @@
+/*
+Theme Name: Winthrop Medical
+Author: Winthrop Web Team
+Description: The first base theme for Winthrop medical affiliates.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import "contact.less";
+@import "doctor.less";
+@import "footer.less";
+@import "header.less";
+@import "hero.less";
+@import "nav.less";
+@import "response.less";
+@import "services.less";
+@import "sprite.less";
+@import "transforms.less";
+
+/********************* Colors *********************/
+@color-light-blue: #73879C;
+@color-blue: #506A85;
+@color-hightlight-blue: #116195;
+@color-main-blue: #33485c;
+
+/********************* HTML ELEMENTS *********************/
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  margin-top: 62px;
+}
+h1,h2,h3,h4,h5,h6,.btn {
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.025em;
+}
+p,a,address,ol,li, .doctor-specialty {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 28px;
+  font-size: 13pt;
+  color: @color-light-blue;
+}
+a {
+  color: @color-hightlight-blue;
+  .title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+}
+/********************* PAGE STYLES *********************/
+.content {
+  padding: 15px;
+  margin-bottom: 15px;
+  h2, h3 {
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: @color-blue;
+  }
+}
+.separator {
+  background-image: url(img/separator-winthrop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 50px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+.sub-header {
+  background-color: @color-main-blue;
+}
+.page-title {
+  color: #ffffff;
+  padding: 5px 5px 0 5px;
+  h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 20px 15px;
+  }
+  h5 {
+    margin-bottom: 20px;
+  }
+}
+.margin-top {
+  margin-top: 20px;
+}

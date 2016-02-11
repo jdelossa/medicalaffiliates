@@ -1,0 +1,88 @@
+@import "common/_variables";
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+// Font Awesome
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
+// end Font Awesome
+
+// google fonts
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+// end googlefonts
+
+@import "common/_global";
+@import "components/_buttons";
+@import "components/_comments";
+@import "components/_forms";
+@import "components/_grid";
+@import "components/_wp-classes";
+@import "components/search";
+@import "components/insurances";
+
+@import "layouts/_header";
+@import "layouts/_sidebar";
+@import "layouts/_footer";
+@import "layouts/_pages";
+@import "layouts/_posts";
+
+@import "custom/image";
+@import "custom/jumbotron";
+@import "custom/services";
+@import "custom/offices";
+@import "custom/physicians";
+@import "custom/nav";
+@import "custom/mobile-header";
+@import "custom/patients";
+
+
+body {
+  background: url(../../assets/images/seamless_paper_texture.png);
+  border-top: solid 2px $brown;
+  overflow-x: hidden;
+  font-family: 'PT Sans', sans-serif;
+}
+.main {
+  padding-bottom: 40px;
+}
+.wrap, footer .container {
+  background-color: $white;
+}
+h1, h2, h3, h4, h5, h6, p, li, a, label {
+  color: $brown;
+  font-family: 'PT Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 768px) {
+  .back-top {
+    background-color: $brand-primary;
+    color: darken($brand-primary, 10%);
+    opacity: 0.8;
+    margin: 10px;
+    padding: 12px 15px;
+    position: fixed;
+      right: 0;
+      bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .back-top {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    min-width: 320px;
+    overflow: scroll;
+  }
+}
